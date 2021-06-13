@@ -41,6 +41,10 @@ h1{
     font-weight: 700;
     font-size:xx-large;
 }
+/*banner*/
+.carousel-inner img{
+	height:350px;
+}
 /*feature section*/
 
 #featured .section-title{
