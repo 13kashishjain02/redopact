@@ -41,6 +41,131 @@ h1{
     font-weight: 700;
     font-size:xx-large;
 }
+
+/*header-section*/
+
+#header .header{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+   /* background-color: grey;*/
+    display: flex;
+    flex-direction: column;
+}
+
+#header .container{
+    min-height: 15vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#header .top-bar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-basis: 40%;
+    background-color: rgb(241, 236, 236);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#header .top-bar-item{
+    margin: 10px;
+    padding: 2px;
+    display: flex;
+}
+
+#header .icon{
+    margin: 0 5px;
+}
+
+#header .icon i{
+    color: teal;
+}
+#header .icon-content{
+    margin: 0 5px;
+}
+
+#header .icon-content h4{
+    color: teal;
+    font-weight: normal;
+}
+
+#header .bottom-bar{
+    overflow: hidden;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    flex-basis: 65%;
+   background-color:rgb(196, 250, 196);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+#header .search-bar{
+    flex-basis: 40%;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    border: olive 2px solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px olive;
+    background-color: #fff;
+
+}
+
+#header .search-bar i{
+    margin: 5px;
+    padding: 5px;
+    color: teal;
+}
+
+#header .search-bar-input{
+    margin: 1px 2px;
+    padding: 1px 1px;
+    border: none;
+    width: 90vh;
+}
+
+#header input:focus{
+    outline: none;
+}
+
+#header .text{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    padding: 15px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .text h4{
+    color: teal;
+    font-weight: normal;
+}
+
+#header .icons{
+    display: flex;
+    flex-basis: 10%;
+    margin: 5px;
+    padding:5px;
+}
+#header .icons i{
+    margin: 15px;
+    padding: 0px;
+    color: teal;
+    font-size:25px;
+    
+}
+
+
+
+/*end-of-header-section*/
 /*banner*/
 .carousel-inner img{
 	height:350px;
@@ -504,6 +629,161 @@ h1{
 
 
 /*end-of-vision-section*/
+
+/*testimonials*/
+#testimonials .testimonial{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* background-color: blue;*/
+}
+/*
+#testimonials .section-title{
+    background-color: pink;
+}*/
+
+#testimonials .testimonial-items{
+   /* background-color: pink;*/
+    margin: 5px;
+    margin-top: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px olive;
+    position: relative;
+}
+
+#testimonials .mySlides {
+    display: none;
+    
+  }
+
+#testimonials .testimonial-item{
+   /* background-color: cornflowerblue;*/
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 30px;
+    flex-basis: 30%;
+    box-shadow: 0px 0px 10px 0px olive;
+    transition: 0.3s ease transform;
+    background-color: papayawhip;
+}
+
+#testimonials .testimonial-item:hover{
+    transform: scale(1.1);
+    background-color: palegoldenrod;
+}
+
+ #testimonials .arrows{
+     margin: 5px;
+     padding: 5px;
+     user-select: none;
+ }
+
+ #testimonials .arrows a{
+    cursor: pointer;
+
+}
+
+#testimonials .arrows a:hover h1{
+    transform: scale(1.1)
+}
+ 
+  
+
+#testimonials .icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+}
+
+#testimonials .icon{
+    flex-basis: 20%;
+    margin: 2px;
+    padding: 2px;
+}
+
+
+#testimonials .testimonial-content{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+#testimonials .testimonial-content h3{
+    color: teal;
+    text-align: center;
+}
+
+#testimonials .user{
+    margin: 7.5px;
+    padding: 7.5px;
+}
+
+#testimonials .user h4{
+    color: olivedrab;
+    text-align: right;
+}
+
+#testimonials .testimonial-footer{
+    /*background-color:blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonials .circle{
+   margin: 10px;
+   padding: 7px;
+   /* background-color: chartreuse;*/
+    border-radius: 50%;
+    border-color: black;
+    flex-basis: 45%;
+    box-shadow: 0px 0px 10px 0px olive;
+    transition: 0.3s ease background-color;
+}
+
+
+#testimonials .circle:hover{
+    background-color: olive;
+}
+
+#testimonials .circle h6{
+    visibility: hidden;
+    font-size: 0px;
+}
+
+#testimonials .active, .circle:hover {
+    background-color: olive;
+  }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*end-of-testimonials*/
+
 
 
 /*footer*/
