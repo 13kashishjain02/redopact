@@ -34,7 +34,7 @@ img{
     margin-bottom: 10px;
     text-transform: uppercase;
     text-align: center;
-    color:black;
+    color:teal;
 }
 
 .section-title span{
@@ -676,13 +676,9 @@ h1{
     position: relative;
 }
 
-#testimonials .mySlides {
-    display: none;
-    
-  }
+
 
 #testimonials .testimonial-item{
-   /* background-color: cornflowerblue;*/
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -699,35 +695,7 @@ h1{
     background-color: palegoldenrod;
 }
 
- #testimonials .arrows{
-     margin: 5px;
-     padding: 5px;
-     user-select: none;
- }
-
- #testimonials .arrows a{
-    cursor: pointer;
-
-}
-
-#testimonials .arrows a:hover h1{
-    transform: scale(1.1)
-}
- 
   
-
-#testimonials .icons{
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    padding: 5px;
-}
-
-#testimonials .icon{
-    flex-basis: 20%;
-    margin: 2px;
-    padding: 2px;
-}
 
 
 #testimonials .testimonial-content{
@@ -737,7 +705,7 @@ h1{
     padding: 15px;
 }
 
-#testimonials .testimonial-content h3{
+#testimonials .testimonial-content h5{
     color: teal;
     text-align: center;
 }
@@ -747,62 +715,10 @@ h1{
     padding: 7.5px;
 }
 
-#testimonials .user h4{
+#testimonials .user h6{
     color: olivedrab;
     text-align: right;
 }
-
-#testimonials .testimonial-footer{
-    /*background-color:blue;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#testimonials .circle{
-   margin: 10px;
-   padding: 7px;
-   /* background-color: chartreuse;*/
-    border-radius: 50%;
-    border-color: black;
-    flex-basis: 45%;
-    box-shadow: 0px 0px 10px 0px olive;
-    transition: 0.3s ease background-color;
-}
-
-
-#testimonials .circle:hover{
-    background-color: olive;
-}
-
-#testimonials .circle h6{
-    visibility: hidden;
-    font-size: 0px;
-}
-
-#testimonials .active, .circle:hover {
-    background-color: olive;
-  }
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-/*end-of-testimonials*/
 
 
 
