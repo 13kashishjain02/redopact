@@ -308,7 +308,7 @@ h1{
 /*recommendation*/
 #rec{
 	width:98px;
-	height:90px;
+	height:230px;
 	position: relative;
 	left: 0;
 	text-align: center;
@@ -317,6 +317,11 @@ h1{
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 0px;
+}
+
+#rec a{
+	color: black;
+	text-decoration: none;
 }
 
 .flickity-page-dots {
