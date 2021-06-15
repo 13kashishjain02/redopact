@@ -9,6 +9,11 @@ body{
 }
 a{
     text-decoration: none;
+    
+}
+
+a:hover{
+    cursor: pointer;
 }
 
 .container{
@@ -63,7 +68,6 @@ h1{
     margin: 0;
     padding: 0;
     width: 100%;
-    flex-basis: 40%;
     background-color: rgb(241, 236, 236);
     display: flex;
     justify-content: flex-end;
@@ -87,11 +91,11 @@ h1{
     margin: 0 5px;
 }
 
-#header .icon-content h4{
+#header .icon-content h6{
     color: teal;
     font-weight: normal;
 }
-
+/*
 #header .bottom-bar{
     overflow: hidden;
     margin: 0px;
@@ -260,6 +264,10 @@ h1{
     z-index: 200;
 }
 
+#featured .feature-item:hover{
+    cursor: pointer;
+}
+
 #featured .feature-item:hover .feature-name {
     display: block;
     transform: scale(1.5);
@@ -365,7 +373,7 @@ h1{
 }
 
 
-#gifts .gift-content h2{
+#gifts .gift-content h3{
     font-weight: 500;
     text-align: center;
 }
@@ -488,7 +496,7 @@ h1{
     flex-basis: 50%;
 }
 
-#vision .description h3{
+#vision .description h5{
     color:teal;
     margin: 15px;
     padding: 15px;
@@ -552,6 +560,14 @@ h1{
     padding: 5px;
 }
 
+#vision .join-us-content{
+    margin: 5px;
+    padding: 5px;
+}
+
+#vision .join-us-content h6{
+    color: teal;
+}
 
 #vision .email{
     margin: 5px;
@@ -589,6 +605,10 @@ h1{
 
 #vision .recaptcha label{
     flex-basis: 70%;
+}
+
+#vision .recaptcha label h6{
+    color: teal;
 }
 
 #vision .button{
@@ -812,7 +832,7 @@ h1{
    /* background-color: yellow;*/
 }
 
-#footer .footer-item h3{
+#footer .footer-item h4{
     color:wheat;
     display: block;
     padding: 5px;
@@ -834,6 +854,11 @@ h1{
     margin: 0px;
     padding: 2px;
     text-decoration: none;
+}
+
+#footer li:hover{
+    opacity: 0.5;
+
 }
 
 
