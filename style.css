@@ -305,6 +305,25 @@ h1{
 
 /*end of feature section*/
 
+/*recommendation*/
+#rec{
+	width:98px;
+	height:90px;
+	position: relative;
+	left: 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0px;
+}
+
+.flickity-page-dots {
+  bottom: 0px;
+  opacity: 0;
+}
+
 /*gifts-section*/
 
 #gifts{
