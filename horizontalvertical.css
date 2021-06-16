@@ -28,8 +28,8 @@
 
 
 #vertical-slider {
-    width: 300px;
-    height: 580px;
+    width: 400px;
+    height: 380px;
     float: left;
     overflow: hidden;
     position: relative;
@@ -38,7 +38,7 @@
 }
 
 #vertical-slider ul {
-  width: 100px;
+  width: 400px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -61,20 +61,20 @@
 }
 
 #vertical-slider ul li {
-  width: 300px;
-  height: 100px;
+  width: 400px;
+  height: 70px;
   float: left;
   display: inline;
   text-align: center;
   overflow: hidden;
   margin: 15px 0;
-  border: 2px rgba(0,0,0,0) solid;
   box-sizing: border-box;
   background-size: contain;
   background-repeat: no-repeat;
   position:relative;
   cursor:pointer;
   background-position:center;
+  padding-top: 10px;
 }
 
 #vertical-slider ul li.video:before {
@@ -90,7 +90,7 @@
 }
 
     #vertical-slider ul li.active {
-        border: 2px #ced4da solid;
+      
     }
 
 #horizon-slider.zoomin ul li.video {
@@ -109,8 +109,27 @@
   user-select: none;
 }
 
+#vertical-slider ul li button{
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-size: 24px;
+  background-color:yellowgreen;
+  color:darkgreen;
+  border: none;
+}
+
+#vertical-slider ul li button a{
+  color: darkgreen;
+  text-decoration: none;
+}
 #vertical-slider ul li iframe {
-  width: 100%;
+  width: 50%;
   height: 100px;
 }
 
@@ -131,9 +150,10 @@
   width: 23px;
   height: 20px;
   position: relative;
-  margin-left: 10px;
+  margin-left: 250px;
   margin-top: 0px;
   cursor: pointer;
+  transform: rotate(90deg);
 }
 
 .horizone-nav .next {
@@ -141,14 +161,14 @@
   width: 23px;
   height: 20px;
   position: relative;
-  margin-right: 300px;
+  margin-top: 370px;
+  margin-right: 450px;
   cursor: pointer;
+  transform: rotate(-270deg);
 }
 
 .horizone-nav .prev .left {
   position: absolute;
-  top: 12px;
-  left: 15px;
   z-index: 7;
   cursor: pointer;
 }
