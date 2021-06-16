@@ -54,14 +54,10 @@ h1{
     margin: 0;
     padding: 0;
    /* background-color: grey;*/
-    display: flex;
-    flex-direction: column;
 }
 
 #header .container{
-    min-height: 15vh;
-    align-items: flex-start;
-    justify-content: flex-start;
+    min-height: 7.5vh;
 }
 
 #header .top-bar{
