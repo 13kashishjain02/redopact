@@ -318,12 +318,55 @@ h1{
 #rec a{
 	color: black;
 	text-decoration: none;
+    font-weight: 400;
 }
 
 .flickity-page-dots {
   bottom: 0px;
   opacity: 0;
 }
+/*trending*/
+#tre{
+    width:135px;
+    height:330px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+#tre a{
+    color: black;
+    text-decoration: none;
+}
+/*End of trending*/
+
+/*recommendation
+#rec{
+	width:98px;
+	height:230px;
+	position: relative;
+	left: 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0px;
+}
+
+#rec a{
+	color: black;
+	text-decoration: none;
+}
+
+.flickity-page-dots {
+  bottom: 0px;
+  opacity: 0;
+}*/
 
 /*gifts-section*/
 
@@ -432,6 +475,22 @@ h1{
 }
 
 /*end-of-gifts-section*/
+
+/*blogs*/
+#blog{
+    width:250px;
+    height:200px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    padding-bottom: 70px;
+}
+/*end of blogs*/
 
 /*vision section*/
 
