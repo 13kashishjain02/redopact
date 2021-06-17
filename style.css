@@ -815,7 +815,7 @@ h1{
 
 #footer .footer{
     
-    min-height: 100px;
+    min-height: 200px;
     flex-direction: row;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -843,8 +843,8 @@ h1{
 
 #footer .footer-item h4{
     color:wheat;
-    padding: 5px;
-    margin: 10px;
+    padding: 0px;
+    margin: 0px;
     margin-top: 0px;
     text-align: left;
     text-transform: uppercase;
@@ -874,6 +874,9 @@ h1{
     text-align: center;
 }
 
+#footer-mobile{
+    display: none;
+}
 
 /*end-of-footer*/
 
@@ -1066,7 +1069,7 @@ h1{
     /*end of testimonial section*/
     /*footer*/
 
-    #footer .footer{
+   /* #footer .footer{
         width: 100%;
         height: 100%;
         display: flex;
@@ -1116,9 +1119,78 @@ h1{
     #footer .copyright h4{
         font-size: 1.2rem;
         text-align: center;
-    }
+    }*/
    
     /*end of footer*/
+
+    #footer{
+        display: none;
+    }
+   
+    /*footer-mobile*/
+
+    #footer-mobile{
+        display: block;
+        min-width: 100%;
+        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    }
+        
+    #footer-mobile .footer{
+        width: 100%;
+       /* background-color: violet;*/
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 5px;
+        padding:5px;
+        
+    }
+    
+    #footer-mobile .footer-items{
+        margin: 5px;
+        padding: 5px;
+      /* background-color: indigo;*/
+    }
+    
+    #footer-mobile .dropdown{
+       /* background-color: turquoise;*/
+        margin: 5px;
+        padding:5px;
+        display: flex;
+        flex-direction: column;
+    }
+    #footer-mobile .dropdown button{
+        margin: 5px;
+        padding:5px;
+        background: transparent;
+        color: peachpuff;
+    }
+
+    #footer-mobile .dropdown button:hover{
+       opacity: 0.7;
+    }
+    #footer-mobile .dropdown ul button{
+        background-color: linear-gradient(60deg, rgb(248, 205, 168) 0%, rgb(226, 170, 160) 100%); ;
+        color: black;
+    }
+
+    #footer-mobile .dropdown ul {
+        background-image: linear-gradient(60deg, #414e5e 0%, #739ac4 100%);
+        box-shadow: 0 0 5px rgb(202, 194, 194);
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer-mobile .dropdown ul li {
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #footer-mobile .copyright h4{
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
 
 /*end of media queries for tablet*/
@@ -1327,56 +1399,74 @@ h1{
         display: none;
     }*/
     /*end of testimonials*/
-    /*footer*/
-    #footer .footer{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        padding: 2px;
-        margin: 2px;
-        align-items: flex-start;
-    }
 
-    #footer .footer-items{
-        margin: 2px 10px;
-        padding: 2px;
+    #footer{
+        display: none;
+    }
+   
+    /*footer-mobile*/
+
+    #footer-mobile{
+        display: block;
+        min-width: 100%;
+        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    }
+        
+    #footer-mobile .footer{
+        width: 100%;
+       /* background-color: violet;*/
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 5px;
+        padding:5px;
+        
+    }
+    
+    #footer-mobile .footer-items{
+        margin: 5px;
+        padding: 5px;
+      /* background-color: indigo;*/
+    }
+    
+    #footer-mobile .dropdown{
+       /* background-color: turquoise;*/
+        margin: 5px;
+        padding:5px;
+        display: flex;
         flex-direction: column;
     }
-    #footer .footer-item{
-        margin: 2px 10px;
-        padding: 2px 10px;
-        height: 80px;
-    }
-   
-   
-
-    #footer .footer-item h4{
-        cursor: pointer;
-        margin: 2px 10px;
-        padding: 2px 10px;
-      
+    #footer-mobile .dropdown button{
+        margin: 5px;
+        padding:5px;
+        background: transparent;
+        color: peachpuff;
     }
 
-    #footer .footer-item h4:hover{
-        opacity: 0.7;
+    #footer-mobile .dropdown button:hover{
+       opacity: 0.7;
+    }
+    #footer-mobile .dropdown ul button{
+        background-color: linear-gradient(60deg, rgb(248, 205, 168) 0%, rgb(226, 170, 160) 100%); ;
+        color: black;
     }
 
-    #footer .footer-item h4:active ul{
-        display: flex;
-    }
-
-    #footer .copyright{
+    #footer-mobile .dropdown ul {
+        background-image: linear-gradient(60deg, #414e5e 0%, #739ac4 100%);
+        box-shadow: 0 0 5px rgb(202, 194, 194);
+        width: 95%;
         align-items: center;
         justify-content: center;
-        margin: 10px 10px;
-        padding: 10px 10px;
     }
-
-    #footer .copyright h4{
-        font-size: 1.2rem;
+    #footer-mobile .dropdown ul li {
+        width: 95%;
+        align-items: center;
+        justify-content: center;
         text-align: center;
     }
 
-    /*end of footer*/
+    #footer-mobile .copyright{
+        text-align: center;
+        font-size: 0.75rem;
+    }
 }
 /*end of media queries for mobile*/
