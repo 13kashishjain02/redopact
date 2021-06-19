@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles_navbar_Responsive.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="three-boxes.css" />
+    <link rel="stylesheet" href="gifts.css"/>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <title>Redo Pact</title>
 </head>
@@ -319,28 +321,28 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="Images/banner.jpg" class="d-block w-100" alt="...">
+                <img src="Images/banner-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>First slide label</h1>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="Images/banner.jpg" class="d-block w-100" alt="...">
+                <img src="Images/banner-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Second slide label</h1>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="Images/banner.jpg" class="d-block w-100" alt="...">
+                <img src="Images/banner-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Third slide label</h1>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="Images/banner.jpg" class="d-block w-100" alt="...">
+                <img src="Images/banner-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Fourth slide label</h1>
                     <p>Some representative placeholder content for the third slide.</p>
@@ -362,12 +364,41 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+
+         <!--three-boxes-->
+    <section id="three-boxes">
+        <div class="three-boxes">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                </div>
+                <img src="Images/three-boxes/img-4.jpg" class="card-img-top" alt="...">
+                
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                </div>
+                <img src="Images/three-boxes/img-2.jpg" class="card-img-top" alt="...">
+                
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                </div>
+                <img src="Images/three-boxes/img-3.jpg" class="card-img-top" alt="...">
+               
+            </div>
+        </div>
+    </section>
+    <!--end-of-three-boxes-->
     </div>
     <!--end of banner-->
+   
 
     <!--featured collections-->
     <section id="featured">
-        <div class="featured container">
+        <div class="featured">
             <div class="featured-header">
                 <h1 class="section-title">Featured <span>Collection</span></h1>
             </div>
@@ -513,6 +544,9 @@
             </div>
 
         </div>
+        
+        
+        
         <div id="rec" class="carousel-cell">
             <a href="#">
                 <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
@@ -634,193 +668,195 @@
         </div>
 
     </div>
-		<h1 style="padding-top: 20px; padding-bottom: 20px; padding-left: 30px;" class="section-title">Recomme<span>ndation</span></h1>
-		<div class="carousel" data-flickity='{"groupCells": true,"draggable":false}'>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-					<h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-				</a>
-				<h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-				<div>
-				<button style="font-size: 12px;" class="btn btn-outline-danger">
-					SHOP NOW
-				</button>
-				</div>
-
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+    <h1 style="padding-top: 20px; padding-bottom: 20px; padding-left: 30px;" class="section-title">
+        Recomme<span>ndation</span></h1>
+    <div class="carousel" data-flickity='{"groupCells": true,"draggable":false}'>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-			    <a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
+            </div>
 
-			</div>
-			<div id="rec" class="carousel-cell">
-				<a href="#">
-					<img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
-				</a>
-				<a style="font-size: 12px; font-weight: 400;" href="#">
-                    <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
-                </a>
-                <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
-                <div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
                 <button style="font-size: 12px;" class="btn btn-outline-danger">
                     SHOP NOW
                 </button>
-                </div>
-			</div>
+            </div>
 
-		</div>
+        </div>
+        <div id="rec" class="carousel-cell">
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 50%;">
+            </a>
+            <a style="font-size: 12px; font-weight: 400;" href="#">
+                <h3 style="font-size: 12px; font-weight: 400;">Recycled newspaper pencils</h3>
+            </a>
+            <h2 style="text-align: left; font-size: 18px; padding-bottom: 0;">₹200</h2>
+            <div>
+                <button style="font-size: 12px;" class="btn btn-outline-danger">
+                    SHOP NOW
+                </button>
+            </div>
+        </div>
+
+    </div>
     <!--End of recommendation-->
-	
+
     <!--Trending-->
-    <h1 style="padding-top: 20px; padding-bottom: 20px; padding-left: 30px;" class="section-title">What's <span>Trending</span></h1>
+    <h1 style="padding-top: 20px; padding-bottom: 20px; padding-left: 30px;" class="section-title">What's
+        <span>Trending</span></h1>
     <div class="carousel" data-flickity='{"groupCells": true,"draggable":false}'>
         <div id="tre" class="carousel-cell">
             <a href="#">
@@ -1006,9 +1042,9 @@
     <!--End of Trending-->
 
 
-    <!--gifts section-->
+    <!--gifts section--
     <section id="gifts">
-        <div class="gifts container">
+        <div class="gifts">
             <div class="gifts-header">
                 <h1 class="section-title">Gif<span>ts</span></h1>
             </div>
@@ -1059,75 +1095,134 @@
         </div>
     </section>
 
-    <!--end of gifts section-->
+    end of old gifts section-->
+
+    <!--new gifts section-->
+    <section id="gifts">
+        <div class="gifts">
+            <div class="gifts-header">
+                <h1 class="section-title">Gif<span>ts</span></h1>
+            </div>
+            <div class="all-gifts">
+                <div class="left">
+                    <div class="gift-item">
+                        <div class="card bg-dark text-white">
+                            <img src="Images/gifts-section/corporate-gifts.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">Card title</h5>
+                              <h5 class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h5>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="top">
+                        <div class="gift-item">
+                            <div class="card bg-dark text-white">
+                                <img src="Images/gifts-section/gift-for-kids.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <h5 class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="gift-item">
+                            <div class="card bg-dark text-white">
+                                <img src="Images/gifts-section/gifts-for-her.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">Card title</h5>
+                                  <h5 class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h5>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="gift-item">
+                        <div class="card bg-dark text-white">
+                            <img src="Images/gifts-section/gifts-for-him.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">Card title</h5>
+                              <h5 class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h5>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--end of new gifts section-->
     <!--Blogs-->
     <a href="#">
         <h1 class="section-title">Blo<span>gs</span></h1>
     </a>
     <div class="carousel" data-flickity='{"groupCells": true,"draggable":false}'>
-            <div id="blog" class="carousel-cell">
-                <h2 style="font-size: 22px;">Title Heading</h2>
-                <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
-                <a href="#">
-                    <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
-                </a>
-                <p style="font-size: 15px;">Some text..</p>
-            </div>
-            <div id="blog" class="carousel-cell">
-                <h2 style="font-size: 22px;">Title Heading</h2>
-                <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
-                <a href="#">
-                    <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
-                </a>
-                <p style="font-size: 15px;">Some text..</p>
-            </div>
-            <div id="blog" class="carousel-cell">
-                <h2 style="font-size: 22px;">Title Heading</h2>
-                <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
-                <a href="#">
-                    <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
-                </a>
-                <p style="font-size: 15px;">Some text..</p>
-            </div>
-            <div id="blog" class="carousel-cell">
-                <h2 style="font-size: 22px;">Title Heading</h2>
-                <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
-                <a href="#">
-                    <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
-                </a>
-                <p style="font-size: 15px;">Some text..</p>
-            </div>
-            <div id="blog" class="carousel-cell">
-                <h2 style="font-size: 22px;">Title Heading</h2>
-                <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
-                <a href="#">
-                    <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
-                </a>
-                <p style="font-size: 15px;">Some text..</p>
-            </div>
-            <div id="blog" class="carousel-cell">
-                <h2 style="font-size: 22px;">Title Heading</h2>
-                <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
-                <a href="#">
-                    <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
-                </a>
-                <p style="font-size: 15px;">Some text..</p>
-            </div>
-            <div id="blog" class="carousel-cell">
-                <h2 style="font-size: 22px;">Title Heading</h2>
-                <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
-                <a href="#">
-                    <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
-                </a>
-                <p style="font-size: 15px;">Some text..</p>
-            </div>
+        <div id="blog" class="carousel-cell">
+            <h2 style="font-size: 22px;">Title Heading</h2>
+            <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
+            </a>
+            <p style="font-size: 15px;">Some text..</p>
+        </div>
+        <div id="blog" class="carousel-cell">
+            <h2 style="font-size: 22px;">Title Heading</h2>
+            <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
+            </a>
+            <p style="font-size: 15px;">Some text..</p>
+        </div>
+        <div id="blog" class="carousel-cell">
+            <h2 style="font-size: 22px;">Title Heading</h2>
+            <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
+            </a>
+            <p style="font-size: 15px;">Some text..</p>
+        </div>
+        <div id="blog" class="carousel-cell">
+            <h2 style="font-size: 22px;">Title Heading</h2>
+            <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
+            </a>
+            <p style="font-size: 15px;">Some text..</p>
+        </div>
+        <div id="blog" class="carousel-cell">
+            <h2 style="font-size: 22px;">Title Heading</h2>
+            <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
+            </a>
+            <p style="font-size: 15px;">Some text..</p>
+        </div>
+        <div id="blog" class="carousel-cell">
+            <h2 style="font-size: 22px;">Title Heading</h2>
+            <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
+            </a>
+            <p style="font-size: 15px;">Some text..</p>
+        </div>
+        <div id="blog" class="carousel-cell">
+            <h2 style="font-size: 22px;">Title Heading</h2>
+            <h5 style="font-size: 18px;">Title description, Dec 7, 2017</h5>
+            <a href="#">
+                <img src="recommend 1.jpg" alt=".." style="width: 100%; height: 65%;">
+            </a>
+            <p style="font-size: 15px;">Some text..</p>
+        </div>
     </div>
     <!--End of blogs-->
 
 
     <!--vision section-->
     <section id="vision">
-        <div class="vision container">
+        <div class="vision">
             <div class="vision-header">
                 <h1 class="section-title"><span>Our</span> Vision</h1>
             </div>
@@ -1246,7 +1341,7 @@
     <!--end of our vision section-->
     <!--testimonials-->
     <section id="testimonials">
-        <div class="testimonial container">
+        <div class="testimonial">
             <div class="testimonial-header">
                 <h1 class="section-title"><span>Testim</span>onials</h1>
             </div>
@@ -1388,7 +1483,7 @@
     <!--testimonials for mobile-->
 
     <section id="testimonials-mobile">
-        <div class="testimonial container">
+        <div class="testimonial">
             <div class="testimonial-header">
                 <h1 class="section-title"><span>Testim</span>onials</h1>
             </div>
@@ -1479,161 +1574,161 @@
                 <div class="footer-item">
                     <div class="shop">
                         <h4>Shop</h4>
-                        
-                            <ul >
-                                <a>
-                                    <li>Fashion</li>
-                                </a>
-                                <a>
-                                    <li>Accessories</li>
-                                </a>
-                                <a>
-                                    <li>Home & Kitchen</li>
-                                </a>
-                                <a>
-                                    <li>Event And Festival Shop</li>
-                                </a>
-                                <a>
-                                    <li>Gift & Toy Shop</li>
-                                </a>
-                                <a>
-                                    <li>Personal Care</li>
-                                </a>
-                                <a>
-                                    <li>Stationary</li>
-                                </a>
-                                <a>
-                                    <li>SALE</li>
-                                </a>
-                                <a>
-                                    <li>Pet Care</li>
-                                </a>
-                            </ul>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="Information">
-                        <h4>Information</h4>
-                        
+
                         <ul>
-                            <li><a>About Us</a></li>
                             <a>
-                                <li>Privacy and Cookie Policy</li>
+                                <li>Fashion</li>
                             </a>
                             <a>
-                                <li>Orders and Returns</li>
+                                <li>Accessories</li>
                             </a>
                             <a>
-                                <li>Terms of Use</li>
+                                <li>Home & Kitchen</li>
                             </a>
                             <a>
-                                <li>Bulk Orders</li>
+                                <li>Event And Festival Shop</li>
                             </a>
                             <a>
-                                <li>Customised Orders</li>
+                                <li>Gift & Toy Shop</li>
                             </a>
                             <a>
-                                <li>Corporate Gifts</li>
+                                <li>Personal Care</li>
                             </a>
                             <a>
-                                <li>Events</li>
+                                <li>Stationary</li>
+                            </a>
+                            <a>
+                                <li>SALE</li>
+                            </a>
+                            <a>
+                                <li>Pet Care</li>
                             </a>
                         </ul>
                     </div>
-                </div>
-                <div class="footer-item">
-                    <div class="Quick-links">
-                        <h4>Quick Links</h4>
-                        
-                        <ul>
-                            <a>
-                                <li>My Account</li>
-                            </a>
-                            <a>
-                                <li>Sell With Us</li>
-                            </a>
-                            <a>
-                                <li>Shopping Cart</li>
-                            </a>
-                            <a>
-                                <li>Customer Registration</li>
-                            </a>
-                            <a>
-                                <li>Blog</li>
-                            </a>
-                            <a>
-                                <li>Login</li>
-                            </a>
-                            <a>
-                                <li>Affiliates</li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="support">
-                        <h4>Support</h4>
-                        
-                        <ul>
-                            <a>
-                                <li>Customer Help & FAQs</li>
-                            </a>
-                            <a>
-                                <li>Seller Help & FAQs</li>
-                            </a>
-                            <a>
-                                <li>Careers</li>
-                            </a>
-                            <a>
-                                <li>News</li>
-                            </a>
-                            <a>
-                                <li>Customer Registration</li>
-                            </a>
-                            <a>
-                                <li>Blog</li>
-                            </a>
-                            <a>
-                                <li>Login</li>
-                            </a>
-                            <a>
-                                <li>Affiliates</li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="contact">
-                        <h4>Contact</h4>
-                        
-                        <ul>
-                            <a>
-                                <li>info@redopact.com</li>
-                            </a>
-                            <l1>
-                                <h6>(General Queries)</h6>
-                            </l1>
-                            <a>
-                                <li>sales@redopact.com</li>
-                            </a>
-                            <l1>
-                                <h6>(Seller Queries)</h6>
-                            </l1>
-                            <a>
-                                <li>support@redopact.com</li>
-                            </a>
-                            <l1>
-                                <h6>(Technical Queries)</h6>
-                            </l1>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
-            <div class="copyright">
-                <h4>Copyright © 2021 Redopact, Inc. All rights reserved.</h4>
+            <div class="footer-item">
+                <div class="Information">
+                    <h4>Information</h4>
+
+                    <ul>
+                        <li><a>About Us</a></li>
+                        <a>
+                            <li>Privacy and Cookie Policy</li>
+                        </a>
+                        <a>
+                            <li>Orders and Returns</li>
+                        </a>
+                        <a>
+                            <li>Terms of Use</li>
+                        </a>
+                        <a>
+                            <li>Bulk Orders</li>
+                        </a>
+                        <a>
+                            <li>Customised Orders</li>
+                        </a>
+                        <a>
+                            <li>Corporate Gifts</li>
+                        </a>
+                        <a>
+                            <li>Events</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
+            <div class="footer-item">
+                <div class="Quick-links">
+                    <h4>Quick Links</h4>
+
+                    <ul>
+                        <a>
+                            <li>My Account</li>
+                        </a>
+                        <a>
+                            <li>Sell With Us</li>
+                        </a>
+                        <a>
+                            <li>Shopping Cart</li>
+                        </a>
+                        <a>
+                            <li>Customer Registration</li>
+                        </a>
+                        <a>
+                            <li>Blog</li>
+                        </a>
+                        <a>
+                            <li>Login</li>
+                        </a>
+                        <a>
+                            <li>Affiliates</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="support">
+                    <h4>Support</h4>
+
+                    <ul>
+                        <a>
+                            <li>Customer Help & FAQs</li>
+                        </a>
+                        <a>
+                            <li>Seller Help & FAQs</li>
+                        </a>
+                        <a>
+                            <li>Careers</li>
+                        </a>
+                        <a>
+                            <li>News</li>
+                        </a>
+                        <a>
+                            <li>Customer Registration</li>
+                        </a>
+                        <a>
+                            <li>Blog</li>
+                        </a>
+                        <a>
+                            <li>Login</li>
+                        </a>
+                        <a>
+                            <li>Affiliates</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="contact">
+                    <h4>Contact</h4>
+
+                    <ul>
+                        <a>
+                            <li>info@redopact.com</li>
+                        </a>
+                        <l1>
+                            <h6>(General Queries)</h6>
+                        </l1>
+                        <a>
+                            <li>sales@redopact.com</li>
+                        </a>
+                        <l1>
+                            <h6>(Seller Queries)</h6>
+                        </l1>
+                        <a>
+                            <li>support@redopact.com</li>
+                        </a>
+                        <l1>
+                            <h6>(Technical Queries)</h6>
+                        </l1>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>Copyright © 2021 Redopact, Inc. All rights reserved.</h4>
+        </div>
         </div>
     </section>
 
@@ -1643,55 +1738,60 @@
         <div class="footer">
             <div class="footer-items">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                      Shop
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <li><button class="dropdown-item" type="button">Action</button></li>
-                      <li><button class="dropdown-item" type="button">Another action</button></li>
-                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
                     </ul>
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Information
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                         <li><button class="dropdown-item" type="button">Action</button></li>
                         <li><button class="dropdown-item" type="button">Another action</button></li>
                         <li><button class="dropdown-item" type="button">Something else here</button></li>
-                      </ul>
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    </ul>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Quick Links
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                         <li><button class="dropdown-item" type="button">Action</button></li>
                         <li><button class="dropdown-item" type="button">Another action</button></li>
                         <li><button class="dropdown-item" type="button">Something else here</button></li>
-                      </ul>
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    </ul>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Support
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                         <li><button class="dropdown-item" type="button">Action</button></li>
                         <li><button class="dropdown-item" type="button">Another action</button></li>
                         <li><button class="dropdown-item" type="button">Something else here</button></li>
-                      </ul>
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    </ul>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Contact
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                         <li><button class="dropdown-item" type="button">Action</button></li>
                         <li><button class="dropdown-item" type="button">Another action</button></li>
                         <li><button class="dropdown-item" type="button">Something else here</button></li>
-                      </ul>
-                  </div>
+                    </ul>
+                </div>
             </div>
-            
+
         </div>
 
         <div class="copyright">
             <h4>Copyright © 2021 Redopact, Inc. All rights reserved.</h4>
         </div>
-       
+
     </section>
     <!--end-of-footer-->
     <!--end of main page-->

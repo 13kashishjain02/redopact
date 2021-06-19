@@ -1,0 +1,39 @@
+
+/*styling of three-boxes*/
+
+#three-boxes .three-boxes{
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    margin-top: -40px;
+    padding: 0px;
+}
+
+#three-boxes .card{
+    margin: 10px;
+    transition: 0.3s ease transform;
+    border: 20px ;
+    box-shadow: 0 0 10px black;
+}
+
+#three-boxes .card img{
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+#three-boxes .card img:hover{
+    opacity: 0.9;
+}
+
+#three-boxes .card:hover{
+    transform: scale(1.03);
+}
+
+#three-boxes .card-body{
+    border: 20px;
+   background-color: rgb(209, 200, 200);
+}
