@@ -349,6 +349,10 @@ h1{
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-top: 0px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: olive 10px;
+    box-shadow: 0 0 5px black;
 }
 
 #rec a{
@@ -362,9 +366,10 @@ h1{
   opacity: 0;
 }
 /*trending*/
+
 #tre{
     width:200px;
-    height:330px;
+    height:300px;
     position: relative;
     left: 0;
     text-align: center;
@@ -372,7 +377,11 @@ h1{
     font-weight: bold;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: olive 10px;
+    box-shadow: 0 0 5px black;
 }
 #tre a{
     color: black;
@@ -515,7 +524,7 @@ end-of-gifts-section*/
 /*blogs*/
 #blog{
     width:250px;
-    height:200px;
+    height:190px;
     position: relative;
     left: 0;
     text-align: center;
@@ -523,8 +532,11 @@ end-of-gifts-section*/
     font-weight: bold;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 0px;
+    margin-top: 5px;
+    margin-bottom:10px;
     padding-bottom: 70px;
+    border: olive;
+    box-shadow: 0 0 5px black;
 }
 /*end of blogs*/
 
