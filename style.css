@@ -53,6 +53,7 @@ h1{
 /*header-section*/
 
 #header .header{
+    
     min-width: 100%;
     margin: 0;
     padding: 0;
@@ -172,7 +173,39 @@ h1{
 /*banner*/
 .carousel-inner img{
 	height:350px;
+  
 }
+
+/*three-boxes*/
+/*styling of three-boxes*/
+#three-boxes .three-boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding: 0px;
+}
+
+#three-boxes .card{
+    margin: 10px;
+    transition: 0.3s ease transform;
+}
+
+#three-boxes .card img{
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+#three-boxes .card img:hover{
+    opacity: 0.9;
+}
+
+#three-boxes .card:hover{
+    transform: scale(1.03);
+}
+/*end-of-three-boxes*
 /*feature section*/
 
 #featured .section-title{
@@ -371,7 +404,7 @@ h1{
   opacity: 0;
 }*/
 
-/*gifts-section*/
+/*gifts-section
 
 #gifts{
     margin-top: 0px;
@@ -379,7 +412,7 @@ h1{
 
 #gifts .gifts{
     flex-direction: column;
-   /* min-width: 1200px;*/
+   /* min-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -477,7 +510,7 @@ h1{
     box-shadow: 0px 0px 10px 0px olive;
 }
 
-/*end-of-gifts-section*/
+end-of-gifts-section*/
 
 /*blogs*/
 #blog{
@@ -741,6 +774,7 @@ h1{
     margin: 0 auto;
     margin-bottom: 25px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 0px;
   /*  background-color: blue;*/
@@ -916,9 +950,9 @@ h1{
     }
     /*end of featured section*/
 
-    /*gifts section*/
+    /* old gifts section
   #gifts .gifts{
-       /* min-width: 720px;*/
+       /* min-width: 720px;
        margin-top: 0px;
        
     }
@@ -956,10 +990,12 @@ h1{
     /*end of gifts section*/
 
     /*vision section*/
-/*    #vision .vision{
+/*   #vision .vision{
         min-width: 720px
         /*background-color: blue;
     }*/
+
+
 
     #vision .all-visions{
         box-shadow: 0px 0px 5px 0px olive;
@@ -1234,7 +1270,7 @@ h1{
     /*gifts section*/
    /* #gifts .gifts{
         min-width: 450px;   
-    }*/
+    }
     #gifts .all-gifts{
         flex-direction: column;
         margin: 1px;
@@ -1450,6 +1486,7 @@ h1{
          margin: 0 auto;
          margin-bottom: 25px;
          display: flex;
+         flex-direction: column;
          align-items: center;
          padding: 0px;
        /*  background-color: blue;*/
