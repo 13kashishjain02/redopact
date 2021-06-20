@@ -6,6 +6,7 @@
 body{
     height: 100vh;  
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(230, 224, 224);
 }
 a{
     text-decoration: none;
@@ -51,13 +52,18 @@ h1{
 }
 
 /*header-section*/
-
-#header .header{
+#header{
     
     min-width: 100%;
     margin: 0;
     padding: 0;
    /* background-color: grey;*/
+}
+
+#header .header{
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #header .container{
@@ -172,7 +178,7 @@ h1{
 /*end-of-header-section*/
 /*banner*/
 .carousel-inner img{
-	height:350px;
+	height: 400px;
   
 }
 
@@ -265,7 +271,7 @@ h1{
     margin: 20px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px olive;
+    box-shadow: 0px 0px 5px 0px black;
     height: 300px;
     position: relative;
     align-items: center;
@@ -274,7 +280,7 @@ h1{
 }
 
 #featured .feature-item:hover{
-    box-shadow:  0px 0px 20px 0px olive;
+    box-shadow:  0px 0px 10px 0px black;
 }
 
 
@@ -338,9 +344,11 @@ h1{
 /*end of feature section*/
 
 /*recommendation*/
+
 #rec{
-	width:140px;
-	height:230px;
+    background-color: #fff;
+	width:230px;
+	height:235px;
 	position: relative;
 	left: 0;
 	text-align: center;
@@ -368,7 +376,8 @@ h1{
 /*trending*/
 
 #tre{
-    width:200px;
+    background-color: #fff;
+    width:205px;
     height:300px;
     position: relative;
     left: 0;
@@ -523,6 +532,7 @@ end-of-gifts-section*/
 
 /*blogs*/
 #blog{
+    background-color: #fff;
     width:250px;
     height:190px;
     position: relative;
@@ -564,6 +574,7 @@ end-of-gifts-section*/
 }
 
 #vision .vision-item{
+    background-color: #fff;
     height: 275px;
     margin: 10px;
     padding: 10px;
@@ -571,7 +582,7 @@ end-of-gifts-section*/
     flex-direction: column;
     overflow: hidden;
     border-radius: 15%;
-    box-shadow: 0px 0px 5px 0px olive;
+    box-shadow: 0px 0px 5px 0px black;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -615,8 +626,9 @@ end-of-gifts-section*/
 }
 
 #vision .description{
-    margin: 20px;
-    padding: 20px;
+    
+    margin: 10px;
+    padding: 10px;
   /*  background-color: olivedrab;*/
     display: flex;
     flex-direction: column;
@@ -630,6 +642,7 @@ end-of-gifts-section*/
 }
 #vision .para{
    /* background-color: yellow;*/
+   background-color: #fff;
     margin: 2px;
     flex-basis: 70%;
     box-shadow: 0px 0px 5px 0px olive;
@@ -639,7 +652,7 @@ end-of-gifts-section*/
 
 #vision .para:hover{
     /* background-color: yellow;*/
-     transform: scale(1);
+     transform: scale(1.04);
  }
 
 #vision .social-icons{
@@ -661,12 +674,12 @@ end-of-gifts-section*/
 
 #vision .social-item:hover img{
     filter: grayscale(0);
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 #vision .join-us{
     margin: 10px;
     padding: 10px;
-   /* background-color: yellow;*/
+    background-color: #fff;
     flex-basis: 30%;
     box-shadow: 0px 0px 5px 0px olive;
     display: flex;
@@ -763,15 +776,16 @@ end-of-gifts-section*/
 }
 
 #vision .vision-image{
+    height: 800px;
     padding: 5px;
     flex-basis: 50%;
     overflow: hidden;
-    box-shadow: 0px 0px 10px 0px olive;
+    box-shadow: 0px 0px 2px 0px black;
     transition: 0.3s ease transform;
 }
 
 #vision .vision-image:hover{
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 
 
@@ -814,18 +828,17 @@ end-of-gifts-section*/
     height: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 10%;
+    border-radius: 1%;
     margin: 20px;
     padding: 15px;
     flex-basis: 30%;
-    box-shadow: 0px 0px 10px 0px olive;
+    box-shadow: 0px 0px 1px 0px black;
     transition: 0.3s ease transform;
-    background-color: papayawhip;
+    background-color: #fff;
 }
 
 #testimonials .testimonial-item:hover{
-    transform: scale(1.1);
-    background-color: palegoldenrod;
+    transform: scale(1.04);
 }
 
   
@@ -1524,17 +1537,16 @@ end-of-gifts-section*/
      #testimonials-mobile .testimonial-item{
          display: flex;
          flex-direction: column;
-         border-radius: 5%;
+         border-radius: 1%;
          margin: 20px;
          padding: 15px;
-         box-shadow: 0px 0px 10px 0px olive;
+         box-shadow: 0px 0px 5px 0px black;
          transition: 0.3s ease transform;
-         background-color: papayawhip;
+         background-color: #fff;
      }
      
      #testimonials-mobile .testimonial-item:hover{
-         transform: scale(1.1);
-         background-color: palegoldenrod;
+         transform: scale(1.04);
      }
 
      #testimonials-mobile h5{
