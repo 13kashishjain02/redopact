@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="three-boxes.css" />
     <link rel="stylesheet" href="gifts.css" />
+    <link href="horizontalvertical.css" rel="stylesheet" />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <title>Redo Pact</title>
 </head>
@@ -695,6 +696,76 @@
         </div>
 
     </section>
+    <!--Vertical slider and a image-->
+    <div class="row">
+        <div class="col-6">
+            <div style="padding-left: 10px; padding-top: 70px;">
+            <img src="Images/banner-1.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minus
+                                            nulla
+                                            reprehenderit? Nisi, fugit obcaecati?</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div
+      class="horVerSlider"
+      data-desktop="800"
+      data-tabportrait="600"
+      data-tablandscape="600"
+      data-mobilelarge="375"
+      data-mobilelandscape="500"
+      data-mobileportrait="375"
+    >
+              <div class="horizon-wrapper ">
+                <div class="horizone-nav">
+                  <div class="prev" style="display: none;">
+                    <img src="leftarrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="vertical-wrapper">
+                <div id="vertical-slider">
+                  <ul>
+
+                    <li
+                      class="ui-draggable ui-draggable-handle ui-draggable-disabled"
+                    ><button><a href="#">Bamboo</a></button></li>
+                    <li
+                      class="ui-draggable ui-draggable-handle ui-draggable-disabled"
+                    ><button><a href="#">Bamboo</a></button></li>
+                    <li
+                      class="ui-draggable ui-draggable-handle ui-draggable-disabled"
+                    ><button><a href="#">Bamboo</a></button></li>
+                    <li
+                      class="ui-draggable ui-draggable-handle ui-draggable-disabled"
+                    ><button><a href="#">Bamboo</a></button></li>
+                    <li
+                      class="ui-draggable ui-draggable-handle ui-draggable-disabled"
+                    ><button><a href="#">Bamboo</a></button></li>
+                    <li
+                      class="ui-draggable ui-draggable-handle ui-draggable-disabled"
+                    ><button><a href="#">Bamboo</a></button></li>
+                    <li
+                      class="ui-draggable ui-draggable-handle ui-draggable-disabled"
+                    ><button><a href="#">Bamboo</a></button></li>
+                    <li
+                      class="ui-draggable ui-draggable-handle ui-draggable-disabled"
+                    ><button><a href="#">Bamboo</a></button></li>
+                  </ul>
+                </div>
+                <div class="horizon-wrapper ">
+                <div class="horizone-nav">
+                  <div class="next" style="display: block;">
+                    <img src="rightarrow.svg" />
+                  </div>
+                </div>
+              </div>
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <!--End of vertical slider and image-->
     
 
         <!--	<h1 style="padding-top: 20px; padding-bottom: 20px; padding-left: 30px;" class="section-title">Recomme<span>ndation</span></h1>
@@ -1880,6 +1951,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="horizontalvertical.js"></script>
 
 </body>
 
