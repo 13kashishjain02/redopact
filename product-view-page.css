@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.sproduct select{
+    display: block;
+    padding: 5px 10px;
+}
+
+.sproduct input{
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.sproduct input:focus{
+    outline: none;
+}
+.sproduct i{
+   text-align: center;
+   color: teal;
+}
+.sproduct button{   
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(124, 123, 123);
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.sproduct button:hover{
+    background-color: teal;
+    cursor: pointer;
+}
+
+.sproduct button:hover i{
+    color: #fff;
+}
+
+.related-products i{
+    color: rgb(238, 238, 15);
+}
+
+.related-products img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.related-products .p-name,.p-price{
+    color: teal;
+}
+
+.related-products button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid teal;
+    background-color: transparent;
+    border-radius: 4px;
+    color: teal;
+}
+
+.related-products button:hover{
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+}
+
