@@ -14,4 +14,37 @@ function removeTag(){
     });
 }
 
-//header
+//login
+
+const inputs = document.querySelectorAll(".input");
+
+
+function addcl(){
+    let parent = this.parentNode.parentNode;
+    parent.classList.add("focus");
+}
+
+function remcl(){
+    let parent = this.parentNode.parentNode;
+    if(this.value == ""){
+        parent.classList.remove("focus");
+    }
+}
+
+
+inputs.forEach(input => {
+    input.addEventListener("focus", addcl);
+    input.addEventListener("blur", remcl);
+});
+
+//forgot password
+
+const forgotPwd = document.querySelector(".forgot-pwd");
+const forgotPassword = document.querySelector(".forgot-password");
+const loginContainer = document.querySelector(".container");
+
+forgotPassword.addEventListener('click',()=>{
+    forgotPwd.style.display = 'block';
+    loginContainer.style.filter = 'blur(10px)';
+})
+
