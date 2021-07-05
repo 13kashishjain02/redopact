@@ -24,15 +24,15 @@
             <img src="Images/phone.svg">
         </div>
         <div class="login-content">
-                <form class="form">
+                <form class="form" action="/login" method="POST">
                 <img src="Images/avatar.svg">
-                <h2 class="title">Welcome</h2>
+                <h2 class="title" style="color: teal; font-weight:bold;">LOGIN</h2>
                 <div class="input-div one" id="inputUserInfoDiv">
                     <div class="i">
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="div">
-                        <input type="text" class="input" placeholder="Username" id="inputUserInfo">
+                        <input type="text" class="input" placeholder="Username" id="inputUserInfo" name="username" value="">
                     </div>
                 </div>
                 <div class="input-div pass" id="inputPasswordDiv">
@@ -40,11 +40,22 @@
                         <i class="fas fa-lock"></i>
                     </div>
                     <div class="div">
-                        <input type="password" class="input" placeholder="Password" id="inputPassword">
+                        <input type="password" class="input" placeholder="Password" id="inputPassword" name="password" value="">
                     </div>
                 </div>
-                <a id="forgot-password" href="#">Forgot Password?</a>
-                <span id="test"><a href="index.html"><button class="btn" id="login-btn">LOGIN</button></a></span>
+                <div class="input-div pass" id="confirmPassword">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <input class="input" placeholder="Confirm Password" id="confirm-Password" name="confirmPassword" value="">
+                    </div>
+                </div>
+                <a id="forgot-password" href="#" style="color: teal;">Forgot Password?</a>
+                <button class="btn" id="login-btn" type="submit" value="Register">LOGIN</button>
+
+                <p class="last-para-login">New User? <span class="change-to-signup" style="color: teal; font-weight: 800; cursor: pointer;"> SIGNUP</span></p>
+                <p class="last-para-signup" style="display: none;">Registered? <span class="change-to-login" style="color: teal; font-weight: 800; cursor: pointer;"> LOGIN</span></p>
             </form>
         </div>
     </div>
@@ -78,8 +89,44 @@
         const wave1 = document.querySelector('.wave-1');
         const cross = document.querySelector('.cross');
         const forgotPwdBtn = document.querySelector('.forgot-pwd-btn');
+        const changeToSignup = document.querySelector('.change-to-signup');
+        const changeToLogin = document.querySelector('.change-to-login');
         var test = document.getElementById('test');
+        const title = document.querySelector('.title');
+        const lastParaLogin = document.querySelector('.last-para-login');
+        const lastParaSignup = document.querySelector('.last-para-signup');
+        confirmPass = document.getElementById('confirmPassword');
+        btn = document.querySelector('.btn');
 
+
+        fetch('https://redopact.pythonanywhere.com/api/login/',{
+            method : 'POST',
+            headers:{
+                'Content-Type':'application/json'
+            }
+        }).then(
+                res =>{
+                    return res.json()
+                } )
+            .then(data => console.log(data))
+        //event listeners
+
+        changeToLogin.addEventListener('click',()=>{
+            lastParaLogin.style.display='block';
+            lastParaSignup.style.display='none';
+           title.innerHTML = 'LOGIN';
+           confirmPass.style.display = 'none';
+           btn.innerHTML = 'LOGIN';
+        })
+
+        changeToSignup.addEventListener('click',()=>{
+            lastParaLogin.style.display='none';
+            lastParaSignup.style.display='block';
+           title.innerHTML = 'SIGNUP';
+           confirmPass.style.display = 'grid';
+           btn.innerHTML = 'SIGNUP';
+           forgotPassword.style.display = 'none';
+        });
         forgotPassword.addEventListener('click', () => {
             forgotPwd.style.display = 'block';
             loginContainer.style.filter = 'blur(20px)';
