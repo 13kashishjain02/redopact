@@ -163,22 +163,25 @@ a:hover{
 
 .btn{
 	display: block;
-	width: 100%;
+	width: 50%;
 	height: 50px;
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-color: #ffbf00;
 	background-size: 200%;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	color: #fff;
+    font-weight: 700;
+    box-shadow: 0 2px 2px #333;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
-	margin: 1rem 0;
+	margin: 1rem auto;
 	cursor: pointer;
 	transition: .5s;
 }
 .btn:hover{
+    color: #fff;
 	background-position: right;
 }
 
@@ -373,6 +376,6 @@ a{
     cursor: pointer;
 }
 
-#confirmPassword{
+#mobile{
     display: none;
 }
