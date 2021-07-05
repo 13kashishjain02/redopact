@@ -21,12 +21,12 @@
     <img class="wave-1" src="Images/wave-1.png">
     <div class="container">
         <div class="img">
-            <img src="Images/phone.svg">
+            <img src="Images/mobile-y.svg" width="100%">
         </div>
         <div class="login-content">
                 <form class="form" action="/login" method="POST">
-                <img src="Images/avatar.svg">
-                <h2 class="title" style="color: teal; font-weight:bold;">LOGIN</h2>
+                <img src="Images/avatar-y.svg">
+                <h2 class="title" style="color: #ffbf00; font-weight:bold;">LOGIN</h2>
                 <div class="input-div one" id="inputUserInfoDiv">
                     <div class="i">
                         <i class="fas fa-user"></i>
@@ -43,22 +43,30 @@
                         <input type="password" class="input" placeholder="Password" id="inputPassword" name="password" value="">
                     </div>
                 </div>
-                <div class="input-div pass" id="confirmPassword">
+                <div class="input-div pass" id="mobile">
                     <div class="i">
-                        <i class="fas fa-lock"></i>
+                        <i class="fas fa-phone"></i>
                     </div>
                     <div class="div">
-                        <input class="input" placeholder="Confirm Password" id="confirm-Password" name="confirmPassword" value="">
+                        <input class="input" placeholder="Mobile Number" id="mobile-number" name="mobile" value="">
                     </div>
                 </div>
                 <a id="forgot-password" href="#" style="color: teal;">Forgot Password?</a>
-                <button class="btn" id="login-btn" type="submit" value="Register">LOGIN</button>
+                <button class="btn" id="login-btn" type="submit" value="Register">SIGN IN</button>
 
                 <p class="last-para-login">New User? <span class="change-to-signup" style="color: teal; font-weight: 800; cursor: pointer;"> SIGNUP</span></p>
                 <p class="last-para-signup" style="display: none;">Registered? <span class="change-to-login" style="color: teal; font-weight: 800; cursor: pointer;"> LOGIN</span></p>
+                <p class="vendor-signin" style="color: teal; font-weight: 700;cursor: pointer; margin: 10px auto;"><a>Vendor LogIn</a></p>
+                <p class="vendor-registration" style="color: teal; font-weight: 700; margin: 10px auto; display: none;"><a>Vendor Registration</a></p>
             </form>
+           
         </div>
+       
     </div>
+   
+        <p class="vendor-signin" style="color: teal;"><a>Vendor LogIn</a></p>
+        <p class="vendor-registration" style="color: teal;"><a>Vendor Registration</a></p>
+   
 
     <div class="forgot-pwd">
         <div class="container-f">
@@ -76,6 +84,8 @@
             <div class="forgot-pwd-btn btn">Submit</div>
 
         </div>
+
+       
     </div>
     <script>
         const forgotPwd = document.querySelector(".forgot-pwd");
@@ -95,8 +105,11 @@
         const title = document.querySelector('.title');
         const lastParaLogin = document.querySelector('.last-para-login');
         const lastParaSignup = document.querySelector('.last-para-signup');
-        confirmPass = document.getElementById('confirmPassword');
-        btn = document.querySelector('.btn');
+        const mobile = document.getElementById('mobile');
+        const btn = document.querySelector('.btn');
+        const svgimg = document.querySelector('.img');
+        const vendorLogin = document.querySelector('.vendor-signin');
+        const vendorRegister = document.querySelector('.vendor-registration');
 
 
         fetch('https://redopact.pythonanywhere.com/api/login/',{
@@ -115,17 +128,24 @@
             lastParaLogin.style.display='block';
             lastParaSignup.style.display='none';
            title.innerHTML = 'LOGIN';
-           confirmPass.style.display = 'none';
-           btn.innerHTML = 'LOGIN';
+           mobile.style.display = 'none';
+           btn.innerHTML = 'SIGN IN';
+           forgotPassword.style.display = 'block';
+           svgimg.innerHTML = ' <img src="Images/mobile-y.svg" width="100%">';
+           vendorLogin.style.display = 'block';
+           vendorRegister.style.display = 'none';
         })
 
         changeToSignup.addEventListener('click',()=>{
             lastParaLogin.style.display='none';
             lastParaSignup.style.display='block';
            title.innerHTML = 'SIGNUP';
-           confirmPass.style.display = 'grid';
+           mobile.style.display = 'grid';
            btn.innerHTML = 'SIGNUP';
            forgotPassword.style.display = 'none';
+           svgimg.innerHTML = ' <img src="Images/shopping.svg" width="100%">';
+           vendorRegister.style.display = 'block';
+           vendorLogin.style.display = 'none';
         });
         forgotPassword.addEventListener('click', () => {
             forgotPwd.style.display = 'block';
