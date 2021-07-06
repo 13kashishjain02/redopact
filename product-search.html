@@ -326,7 +326,8 @@
     <section id="top">
         <div class="left">
             <h3>Showing results for : <span class="product-item-name">"Shoes"</span></h3>
-            <h5><span class="product-number"> 55 </span> search results found for the keyword "shoes"</h5>
+            <h5><span class="product-number"> 55 </span> search results found for the keyword <span class="keyword">
+                    "shoes"</span> </h5>
         </div>
         <div class="right">
             <h2>Sort by nearest match:
@@ -367,12 +368,13 @@
                     </div>
                 </div>
                 <div class="price-indicator">
-                    <h4 style="font-weight: 100; font-size: 1rem; text-align: center;">Rs <span class="min-price">600</span> - Rs <span class="max-price"> 1000</span></h4>
+                    <h4 style="font-weight: 100; font-size: 1rem; text-align: center;">Rs <span
+                            class="min-price">600</span> - Rs <span class="max-price"> 1000</span></h4>
                 </div>
             </div>
             <div class="size left-boxes">
                 <h4 class="title">Size :</h4>
-                <div class="checkboxes">
+                <div class="checkboxes size-checkbox">
                     <span class="checkbox"><input type="checkbox" id="check"><label for="check">5</label></span>
                     <span class="checkbox"><input type="checkbox" id="check"><label for="check">6</label></span>
                     <span class="checkbox"><input type="checkbox" id="check"><label for="check">7</label></span>
@@ -384,133 +386,186 @@
             <div class="product-type left-boxes">
                 <h4 class="title">Product Type :</h4>
                 <div class="checkboxes" style="display: flex; flex-direction: column;">
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Sneakers <span class="no-of-sneakers"> (12)</span></label></span>
                 </div>
             </div>
             <div class="materials-used left-boxes">
                 <h4 class="title">Materials Used :</h4>
                 <div class="checkboxes" style="display: flex; flex-direction: column;">
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Recycled Polyester</label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Organic Cotton</label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Plant Based Resin</label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Recycled Polyester</label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Organic Cotton</label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Plant Based Resin</label></span>
                 </div>
             </div>
             <div class="brand left-boxes">
                 <h4 class="title">Brand</h4>
-                <div class="checkboxes" style="display: flex; flex-direction: column;">
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Rackled Shoes</label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">SAOLA</label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Kyrgis</label></span>
+                <div class="checkboxes brand-checkbox" style="display: flex; flex-direction: column;">
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Rackled Shoes</label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">SAOLA</label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Kyrgis</label></span>
                 </div>
             </div>
             <div class="gender left-boxes">
                 <h4 class="title">Gender :</h4>
                 <div class="checkboxes" style="display: flex; flex-direction: column;">
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Man</label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Woman</label></span>
-                    <span class="checkbox"><input type="checkbox" id="check"><label for="check" style="margin-left: 5px;">Unisex</label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Man</label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Woman</label></span>
+                    <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                            style="margin-left: 5px;">Unisex</label></span>
                 </div>
             </div>
         </div>
-        <div class="col-lg-7 col-md-6 bottom-right" style="flex-basis: 80%;">
+        <div class="col-lg-7 col-md-6 bottom-right" id="productList" style="flex-basis: 80%;">
             <div class="product text-center">
-                <img class="img-fluid " src="Images/Product_Details/product-2.jpg">
+                <img class="img-fluid product-img " src="Images/Product_Details/product-2.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid " src="Images/Product_Details/product-5.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid " src="Images/Product_Details/product-10.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn ">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid " src="Images/Product_Details/product-11.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn ">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid " src="Images/Product_Details/product-2.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn ">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
+
             </div>
             <div class="product text-center">
                 <img class="img-fluid " src="Images/Product_Details/product-5.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn ">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid " src="Images/Product_Details/product-10.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid" src="Images/Product_Details/product-11.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid" src="Images/Product_Details/product-2.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid" src="Images/Product_Details/product-5.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid" src="Images/Product_Details/product-10.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
             <div class="product text-center">
                 <img class="img-fluid" src="Images/Product_Details/product-11.jpg">
                 <h5 class="p-name">T-shirt</h5>
                 <h4 class="p-price">&#8377 250</h4>
-                <button class="buy-btn">Buy Now</button>
+                <div class="buttons" style="display: flex;">
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                </div>
             </div>
 
-             <!--pagination-->
-             <nav aria-label="Page navigation example" class="my-5">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+
         </div>
-       
+
     </section>
+
+    <!--pagination-->
+    <nav id="pagination" aria-label="Page navigation example" class="my-5">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <!--footer-->
     <section id="footer">
         <div class="footer container">
@@ -805,7 +860,76 @@
         inputRight.addEventListener("mouseup", function () {
             thumbRight.classList.remove("active");
         });
+
+
+        const productItemName = document.querySelector('.product-item-name');
+        const productNumber = document.querySelector('.product-number');
+        const productImg = document.querySelectorAll('.product-img ');
+        const productName = document.querySelectorAll('.p-name');
+        const productPrice = document.querySelectorAll('.p-price');
+        const searchBtn = document.getElementById('srch');
+        const productList = document.getElementById('productList');
+        const keyword = document.querySelector('.keyword');
+        const brand = document.querySelector('.brand-checkbox');
+        const size = document.querySelector('.size-checkbox');
+
+        //event listeners
+        searchBtn.addEventListener('click', getProductList);
+
+
+        //get product list that matches with the input keyword
+        function getProductList() {
+            let searchInputTxt = document.getElementById('inpt_srch').value.trim();
+            fetch(`https://redopact.pythonanywhere.com/api/product-api/${searchInputTxt}`).then(response => response.json()).then(datas => {
+                console.log(datas);
+                let html = "";
+                let pName = " ";
+                let pStock = " ";
+                let brandhtml = " ";
+                let sizehtml = " ";
+                if (datas) {
+                    datas.forEach(data => {
+                        html += `
+                        <div class="product text-center" data-id="${data.name}">
+                            <img class="img-fluid product-img " src="https://redopact.pythonanywhere.com/${data.image}">
+                            <h5 class="p-name">${data.name}</h5>
+                            <h4 class="p-price">&#8377 ${data.price}</h4>
+                            <div class="buttons" style="display: flex;">
+                                <button class="buy-btn"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="buy-btn"><i class="fas fa-heart"></i></button>
+                             </div>
+                        </div> `;
+
+                        pStock += `${data.stock}`;
+
+                        brandhtml += `
+                            <span class="checkbox"><input type="checkbox" id="check"><label for="check"
+                                    style="margin-left: 5px;">${data.brand}</label></span>`;
+
+                        sizehtml += ` <span class="checkbox"><input type="checkbox" id="check"><label for="check">${data.size}</label></span>`;
+                    })
+
+
+
+                    pName += `"${searchInputTxt}"`;
+
+                }
+                else {
+                    html = "Sorry, we didn't find any product!";
+                    productList.classList.add('notFound');
+                }
+                size.innerHTML = sizehtml;
+                productList.innerHTML = html;
+                brand.innerHTML = brandhtml;
+                productItemName.innerHTML = pName;
+                productNumber.innerHTML = pStock;
+                keyword.innerHTML = pName;
+            });
+        }
+
+
     </script>
+
 </body>
 
 </html>

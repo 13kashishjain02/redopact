@@ -48,3 +48,29 @@ forgotPassword.addEventListener('click',()=>{
     loginContainer.style.filter = 'blur(10px)';
 })
 
+
+
+
+
+
+
+////////////////////////////////////////Product Search////////////////////////////////////////
+const productItemName = document.querySelector('.product-item-name');
+const productNumber = document.querySelector('.product-number');
+const  productImg  = document.querySelectorAll('.product-img ');
+const productName = document.querySelectorAll('.p-name');
+const productPrice = document.querySelectorAll('.p-price');
+const productSearch = document.getElementById('inptxs_srch');
+const searchBtn = document.getElementById('srch');
+const productList = document.getElementById('productList');
+
+//event listeners
+searchBtn.addEventListener('click',getProductList);
+
+
+//get product list that matches with the input keyword
+function getProductList(){
+    let searchInputTxt = document.getElementById('inptxs_srch').value.trim();
+    console.log(searchInputTxt);
+} 
+
