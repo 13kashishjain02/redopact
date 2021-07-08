@@ -79,3 +79,28 @@
     cursor: pointer;
 }
 
+.size-title{
+    font-size: 1.5rem;
+    color: teal;
+    font-weight: 600;
+}
+
+.btn-secondary{
+   color: teal;
+   font-size: 1.2rem;
+   font-weight: 800;
+   border: 1px solid #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+   background-color: #fff;
+   margin: 2px;
+   margin-left: 5px;
+
+}
+
