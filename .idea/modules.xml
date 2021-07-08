@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/redopact.iml" filepath="$PROJECT_DIR$/.idea/redopact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../snippets/.idea/snippets.iml" filepath="$PROJECT_DIR$/../../snippets/.idea/snippets.iml" />
     </modules>
   </component>
 </project>
