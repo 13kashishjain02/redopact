@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="product-search.css">
     <link rel="stylesheet" href="styles_navbar_Responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -322,15 +323,13 @@
 
     <!--end of navbar-->
 
-   
-
     <section id="top">
-        <div class="top-left">
+        <div class="left">
             <h3>Showing results for : <span class="product-item-name">"Shoes"</span></h3>
-            <h5><span class="product-number"> 55 </span> search results found for the keyword <span id="keyword">
+            <h5><span class="product-number"> 55 </span> search results found for the keyword <span class="keyword">
                     "shoes"</span> </h5>
         </div>
-        <div class="top-right">
+        <div class="right">
             <h2>Sort by nearest match:
                 <span>
                     <select name="Clothing Footwear" id="Fashion" class="my-3">
@@ -346,20 +345,12 @@
         </div>
     </section>
 
-     <!--filter and sort-->
-     <div class="fi-and-so">
-        <button class=" buy-btn btn filter-box-btn" id="filterBtn">FILTER</button>
-        
-     </div>
-     
-
     <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <section id="bottom" style="display: flex;">
         <div class="col-lg-2 col-md-2 bottom-left" style="flex-basis: 20%;">
-            <div class="refined-searches" style="margin: 5px; padding: 5px; color: teal; font-weight: 800; display: flex; ">
-                <h2 style="font-weight: 600;">REFINED SEARCHES</h2>
-                <h3 class="XBtn" style="display: none;  margin-left: 60px;">X</h3>
+            <div class="refined-searches" style="margin: 5px; padding: 5px; color: teal; font-weight: 800;">
+                <h3>Refined Searches</h3>
             </div>
             <div class="price left-boxes">
                 <h4 class="title">Price :</h4>
@@ -440,19 +431,7 @@
                             style="margin-left: 5px;">Unisex</label></span>
                 </div>
             </div>
-            <div class="top-right-left-boxes left-boxes"  >
-                <h2 style="color: #fff; font-size: 1.2rem; padding: 5px;">Sort by nearest match:
-                    <div style="margin:5px; padding: 5px;">
-                        <div style="margin: 5px;">O-2</div>
-                        <div style="margin: 5px;">O-2</div>
-                        <div style="margin: 5px;">O-2</div>
-                        <div style="margin: 5px;">O-2</div>
-                        <div style="margin: 5px;">O-2</div>
-                    </div>
-                </h2>
-            </div>
         </div>
-        
         <div class="col-lg-7 col-md-6 bottom-right" id="productList" style="flex-basis: 80%;">
             <div class="product text-center">
                 <img class="img-fluid product-img " src="Images/Product_Details/product-2.jpg">
@@ -568,9 +547,7 @@
         </div>
 
     </section>
-   <!-------------------------------------------------------------------------------------->
-  
-    
+
     <!--pagination-->
     <nav id="pagination" aria-label="Page navigation example" class="my-5">
         <ul class="pagination">
@@ -827,10 +804,6 @@
         var thumbRight = document.querySelector(".slider > .thumb.right");
         var range = document.querySelector(".slider > .range");
 
-        var minPrice = document.querySelector(".min-price");
-        var maxPrice = document.querySelector(".max-price");
-
-
         function setLeftValue() {
             var _this = inputLeft,
                 min = parseInt(_this.min),
@@ -842,7 +815,6 @@
 
             thumbLeft.style.left = percent + "%";
             range.style.left = percent + "%";
-            minPrice.innerHTML = parseInt(percent);
         }
         setLeftValue();
 
@@ -857,7 +829,6 @@
 
             thumbRight.style.right = (100 - percent) + "%";
             range.style.right = (100 - percent) + "%";
-            maxPrice.innerHTML = parseInt(percent);
         }
         setRightValue();
 
@@ -898,30 +869,9 @@
         const productPrice = document.querySelectorAll('.p-price');
         const searchBtn = document.getElementById('srch');
         const productList = document.getElementById('productList');
-        const keyword = document.getElementById('keyword');
+        const keyword = document.querySelector('.keyword');
         const brand = document.querySelector('.brand-checkbox');
         const size = document.querySelector('.size-checkbox');
-
-        const filterBtn = document.getElementById('filterBtn');
-        const bottomLeft = document.querySelector('.bottom-left');
-        const bottomRight = document.querySelector('.bottom-right');
-        const refinedSearchesTitle = document.querySelector('.refined-searches')
-        const Xbtn = document.querySelector('.XBtn');
-        const topRight = document.querySelector('.top-right-left-boxes');
-
-        //event listeners
-        filterBtn.addEventListener('click',() => {
-            bottomLeft.style.display = 'flex';
-            bottomRight.style.display = 'none';
-            Xbtn.style.display = 'block';
-        });
-
-        Xbtn.addEventListener('click',()=>{
-            bottomLeft.style.display = 'none';
-            bottomRight.style.display = 'flex';
-          
-           
-        })
 
         //event listeners
         searchBtn.addEventListener('click', getProductList);
