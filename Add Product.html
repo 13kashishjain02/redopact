@@ -4,14 +4,25 @@
   <title>product page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+<style>
+	#Category1 {
+      display: none;
+   }
+   #Category2 {
+      display: none;
+   }
+   #SubCategory1 {
+      display: none;
+   }
+</style>
 <body>
-    <div class="row" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-left: 100px; margin-right: 100px;">
-        <div class="col-md-6 col-xs-12" style="padding-top: 10px; ">
-            <div class="container" style="border:2px solid gray; padding-left: 15px; box-shadow: 0px 0px 5px gray;">
+    <div class="row" style="padding-top: 10px; padding-left: 10px; padding-right: 10px;">
+        <div class="col-md-6 col-xs-12" style="padding-top: 10px;">
+            <div class="container" style="border:2px solid black; padding-left: 15px;">
                 <br>
                 <h2>Add Product</h2>
                 <hr style="border: 1px solid lightgrey; background: lightgrey;">
@@ -32,6 +43,18 @@
                     Product Brand
                 </div>
                 <input type="text" name="Brand" style="width: 100%; border:1px solid lightgrey; height:30px;">
+                <div style="font-weight: 400; padding-bottom: 10px; padding-top: 15px;">
+                    Product Description (in 30-50 words)
+                </div>
+                <input type="text" name="shortdescription" style="width: 100%; border:1px solid lightgrey; height:110px;">
+                <div style="font-weight: 700; text-decoration:underline; padding-bottom: 10px; padding-top: 15px;">
+                    Weight (in kg)*
+                </div>
+                <input type="text" name="Weight" style="width: 100%; border:1px solid lightgrey; height:30px;">
+                <div style="font-weight: 700; text-decoration:underline; padding-bottom: 10px; padding-top: 15px;">
+                    L*B*H (in cm)*
+                </div>
+                <input type="text" name="Dimensions" style="width: 100%; border:1px solid lightgrey; height:30px;">
                 <div style="font-weight: 700; text-decoration:underline; padding-bottom: 10px; padding-top: 15px;">
                     Price*
                 </div>
@@ -40,6 +63,11 @@
                     Selling Price
                 </div>
                 <input type="text" name="SellingPrice" style="width: 100%; border:1px solid lightgrey; height:30px;">
+                <div style="font-weight: 700; text-decoration:underline; padding-bottom: 10px; padding-top: 15px;">
+                    Quantity*
+                </div>
+                <input type="text" name="Quantity" style="width: 100%; border:1px solid lightgrey; height:30px;">
+                
                 <div style="font-weight: 400; padding-bottom: 10px; padding-top: 15px;">
                     Delivery Rates
                 </div>
@@ -48,8 +76,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-xs-12" style="padding-top: 10px; ">
-            <div class="container" style="border:2px solid gray;  box-shadow: 0px 0px 5px gray;">
+        <div class="col-md-6 col-xs-12" style="padding-top: 10px;">
+            <div class="container" style="border:2px solid black;">
                 <br>
                 <h5 style="font-weight: 400; font-size: 20px;">Description and Category</h5>
                 <p style="font-weight: 500;">
@@ -58,11 +86,76 @@
                 <hr style="border: 1px solid lightgrey; background: lightgrey;">
                 <p style="font-weight: 500;">
                     <div style="font-weight: 400; padding-bottom: 10px;">Description:</div>
-                    <!--<input type="text" name="Description" style="width: 100%; border:1px solid lightgrey; height:436px;">-->
-                    <textarea style="width: 100%; height: 430px;"></textarea>
+                    <input type="text" name="Description" style="width: 100%; border:1px solid lightgrey; height:436px;">
+                    <div style="font-weight: 700; text-decoration:underline; padding-bottom: 10px; padding-top: 15px;">
+                    Material*
+                </div>
+                <input type="text" name="Material" style="width: 100%; border:1px solid lightgrey; height:30px;">
+                <div style="font-weight: 700; text-decoration:underline; padding-bottom: 10px; padding-top: 15px;">
+                    Type*
+                </div>
+                <input type="text" name="Type" style="width: 100%; border:1px solid lightgrey; height:30px;">
+                <label for="inputState" ><div style="font-weight: 400; padding-bottom: 10px; padding-top: 15px;">
+                    Category
+                </div></label>
+			      <select id="inputState" class="form-control" onchange="displayDivDemo('Category2', this)">
+			        <option selected>Choose...</option>
+			        <option value="0">Category 1</option>
+			        <option value="1">Category 2</option>
+			      </select>
+			    <div id="Category2">
+			    	<label for="inputState" ><div style="font-weight: 400; padding-bottom: 10px; padding-top: 15px;">
+                    Sub Category
+                </div></label>
+			      <select id="inputState" class="form-control" onchange="displayDivDemo('hideValuesOnSelect', this)">
+			        <option selected>Choose...</option>
+			        <option value="0">Category 1</option>
+			        <option value="1">Category 2</option>
+			      </select>
+			    </div>
+			    <div id="Category1">
+			    	<label for="inputState" ><div style="font-weight: 400; padding-bottom: 10px; padding-top: 15px;">
+                    Sub Category 1
+                </div></label>
+			      <select id="inputState" class="form-control" onchange="displayDiv('hideValuesOnSelect', this)">
+			        <option selected>Choose...</option>
+			        <option value="0">Sub Category 1</option>
+			        <option value="1">Sub Category 2</option>
+			      </select>
+			    </div>
+			    <div id="SubCategory1">
+			    	<label for="inputState" ><div style="font-weight: 400; padding-bottom: 10px; padding-top: 15px;">
+                    Sub Category 2
+                </div></label>
+			      <select id="inputState" class="form-control">
+			        <option selected>Choose...</option>
+			        <option value="0">Sub Category 1</option>
+			        <option value="1">Sub Category 2</option>
+			      </select>
+			    </div>
+
                 </p>
+                
+
             </div>
         </div>
     </div>
 </body>
+<script>
+   function displayDivDemo(id, elementValue) {
+   	console.log(elementValue.value);
+   	if (elementValue.value==0){
+   		document.getElementById('Category1').style.display = elementValue.value == 0 ? 'block' : 'none';
+   	}
+   	if(elementValue.value==1){
+      document.getElementById('Category2').style.display = elementValue.value == 1 ? 'block' : 'none';
+   	}
+   }
+   function displayDiv(id, elementValue) {
+   	console.log(elementValue.value);
+   	if(elementValue.value==1){
+      document.getElementById('SubCategory1').style.display = elementValue.value == 1 ? 'block' : 'none';
+   	}
+   }
+</script>
 </html>

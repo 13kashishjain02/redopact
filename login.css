@@ -6,7 +6,6 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
     width: 100%;
    height: 100%;
 }
@@ -20,7 +19,7 @@ body{
 }
 
 .container{
-   
+
     width: 100vw;
     height: 80%;
    display: flex;
@@ -162,7 +161,7 @@ a:hover{
 	color: #38d39f;
 }
 
-.btn{
+.butn{
 	display: block;
 	width: 50%;
 	height: 50px;
@@ -181,7 +180,7 @@ a:hover{
 	cursor: pointer;
 	transition: .5s;
 }
-.btn:hover{
+.butn:hover{
     color: #fff;
 	background-position: right;
 }
@@ -319,7 +318,7 @@ a:hover{
     outline: none;
 }
 
-.forgot-pwd .btn{
+.forgot-pwd .butn{
     width: 200px;
     height: 50px;
     margin: 30px auto;
@@ -351,12 +350,4 @@ a{
     font-size: 2rem;
 }
 
-#footerbar{
-    background-color: teal;
-    height: 7vh;
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    box-shadow: 2px  0px 2px #333;
-}
+
