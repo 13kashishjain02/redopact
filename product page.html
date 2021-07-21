@@ -8,7 +8,7 @@
 <!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <link href="productSlider.css" rel="stylesheet"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <style>
@@ -767,7 +767,7 @@ label.radio input:checked+span::before {
                     </div>
                 </div>
             </div>
-            <div class="card mt-2 col-12"> <span>Similar items:</span>
+          <!--  <div class="card mt-2 col-12"> <span>Similar items:</span>
                     <div class="similar-products mt-2 d-flex flex-row">
                         <div class="card border p-1" style="width: 9rem;margin-right: 3px;"> <img src="https://i.imgur.com/KZpuufK.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -821,7 +821,436 @@ label.radio input:checked+span::before {
                         </div>
 
                     </div>
+                </div> -->
+
+
+
+                  <!--product slider starts /*desktop version*/-->
+    <div id="carouselExampleIndicators" class="carousel slide desktop" data-bs-ride="carousel">
+        <div class="carousel-inner p-2">
+          <div class="carousel-item active p-4">
+              <div class="similarProducts" class="d-block w-100">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              </div>
+           
+          </div>
+          <div class="carousel-item p-4">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+            </div>
+         
+        </div>
+        <div class="carousel-item p-4">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img"  src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+            </div>
+         
+        </div>
+        <div class="carousel-item p-4">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+            </div>
+         
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+        <!--product slider tablet version-->
+
+        <div id="carouselExampleIndicators" class="carousel slide tablet" data-bs-ride="carousel">
+            <div class="carousel-inner p-2">
+              <div class="carousel-item active p-4">
+                  <div class="similarProducts" class="d-block w-100">
+                    <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                    <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                    <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  </div>
+               
+              </div>
+              <div class="carousel-item p-4">
+                <div class="similarProducts" class="d-block w-100">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
                 </div>
+             
+            </div>
+            <div class="carousel-item p-4">
+                <div class="similarProducts" class="d-block w-100">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                </div>
+             
+            </div>
+            <div class="carousel-item p-4">
+                <div class="similarProducts" class="d-block w-100">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                </div>
+             
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+      <!--product slider mobile version-->
+
+      <div id="carouselExampleIndicators" class="carousel slide mobile" data-bs-ride="carousel">
+        <div class="carousel-inner p-1">
+          <div class="carousel-item active p-1">
+              <div class="similarProducts" class="d-block w-100">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              </div>
+           
+          </div>
+          <div class="carousel-item p-1">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+            </div>
+         
+        </div>
+        <div class="carousel-item p-1">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+            </div>
+         
+        </div>
+        <div class="carousel-item p-1">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+            </div>
+         
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide desktop" data-bs-ride="carousel">
+        <div class="carousel-inner p-2">
+          <div class="carousel-item active p-4">
+              <div class="similarProducts" class="d-block w-100">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              </div>
+           
+          </div>
+          <div class="carousel-item p-4">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+            </div>
+         
+        </div>
+        <div class="carousel-item p-4">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img"  src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+            </div>
+         
+        </div>
+        <div class="carousel-item p-4">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+            </div>
+         
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+        <!--product slider tablet version-->
+
+        <div id="carouselExampleIndicators" class="carousel slide tablet" data-bs-ride="carousel">
+            <div class="carousel-inner p-2">
+              <div class="carousel-item active p-4">
+                  <div class="similarProducts" class="d-block w-100">
+                    <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                    <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                    <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  </div>
+               
+              </div>
+              <div class="carousel-item p-4">
+                <div class="similarProducts" class="d-block w-100">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                </div>
+             
+            </div>
+            <div class="carousel-item p-4">
+                <div class="similarProducts" class="d-block w-100">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                </div>
+             
+            </div>
+            <div class="carousel-item p-4">
+                <div class="similarProducts" class="d-block w-100">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                </div>
+             
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+      <!--product slider mobile version-->
+
+      <div id="carouselExampleIndicators" class="carousel slide mobile" data-bs-ride="carousel">
+        <div class="carousel-inner p-1">
+          <div class="carousel-item active p-1">
+              <div class="similarProducts" class="d-block w-100">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              </div>
+           
+          </div>
+          <div class="carousel-item p-1">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+            </div>
+         
+        </div>
+        <div class="carousel-item p-1">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+            </div>
+         
+        </div>
+        <div class="carousel-item p-1">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+            </div>
+         
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide desktop" data-bs-ride="carousel">
+        <div class="carousel-inner p-2">
+          <div class="carousel-item active p-4">
+              <div class="similarProducts" class="d-block w-100">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              </div>
+           
+          </div>
+          <div class="carousel-item p-4">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+            </div>
+         
+        </div>
+        <div class="carousel-item p-4">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img"  src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+            </div>
+         
+        </div>
+        <div class="carousel-item p-4">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+            </div>
+         
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+        <!--product slider tablet version-->
+
+        <div id="carouselExampleIndicators" class="carousel slide tablet" data-bs-ride="carousel">
+            <div class="carousel-inner p-2">
+              <div class="carousel-item active p-4">
+                  <div class="similarProducts" class="d-block w-100">
+                    <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                    <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                    <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  </div>
+               
+              </div>
+              <div class="carousel-item p-4">
+                <div class="similarProducts" class="d-block w-100">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                </div>
+             
+            </div>
+            <div class="carousel-item p-4">
+                <div class="similarProducts" class="d-block w-100">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                </div>
+             
+            </div>
+            <div class="carousel-item p-4">
+                <div class="similarProducts" class="d-block w-100">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                  <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+                </div>
+             
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+      <!--product slider mobile version-->
+
+      <div id="carouselExampleIndicators" class="carousel slide mobile" data-bs-ride="carousel">
+        <div class="carousel-inner p-1">
+          <div class="carousel-item active p-1">
+              <div class="similarProducts" class="d-block w-100">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+                <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+              </div>
+           
+          </div>
+          <div class="carousel-item p-1">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+            </div>
+         
+        </div>
+        <div class="carousel-item p-1">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+            </div>
+         
+        </div>
+        <div class="carousel-item p-1">
+            <div class="similarProducts" class="d-block w-100">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg">
+              <img class="carousel-similar-img" src="Images/Product_Details/category-1.jpg" >
+            </div>
+         
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
         </div>
     </div>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
