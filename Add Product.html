@@ -18,6 +18,9 @@
    #SubCategory1 {
       display: none;
    }
+   #SubCategory2 {
+      display: none;
+   }
 </style>
 <body>
     <div class="row" style="padding-top: 10px; padding-left: 10px; padding-right: 10px;">
@@ -127,6 +130,16 @@
 			    	<label for="inputState" ><div style="font-weight: 400; padding-bottom: 10px; padding-top: 15px;">
                     Sub Category 2
                 </div></label>
+			      <select id="inputState" class="form-control" onchange="display3rdCategory(this)">
+			        <option selected>Choose...</option>
+			        <option value="0">Sub Category 1</option>
+			        <option value="1">Sub Category 2</option>
+			      </select>
+			    </div>
+			    <div id="SubCategory2">
+			    	<label for="inputState" ><div style="font-weight: 400; padding-bottom: 10px; padding-top: 15px;">
+                    Sub Category 3
+                </div></label>
 			      <select id="inputState" class="form-control">
 			        <option selected>Choose...</option>
 			        <option value="0">Sub Category 1</option>
@@ -153,9 +166,19 @@
    }
    function displayDiv(id, elementValue) {
    	console.log(elementValue.value);
+   	if(elementValue.value==0){
+      document.getElementById('SubCategory1').style.display = elementValue.value == 0 ? 'block' : 'none';
+   	}
    	if(elementValue.value==1){
       document.getElementById('SubCategory1').style.display = elementValue.value == 1 ? 'block' : 'none';
    	}
    }
+   function display3rdCategory(elementValue) {
+   	console.log(elementValue.value);
+   	if(elementValue.value==1){
+      document.getElementById('SubCategory2').style.display = elementValue.value == 1 ? 'block' : 'none';
+   	}
+   }
+
 </script>
 </html>
