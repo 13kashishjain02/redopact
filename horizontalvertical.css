@@ -1,5 +1,4 @@
 .horVerSlider {
-  padding: 60px 0;
   float: left;
   display: block;
   position:relative;
@@ -10,7 +9,7 @@
     padding: 0;
     float: left;
     position: relative;
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 .vertical-wrapper {
@@ -20,9 +19,7 @@
 }
 
 
-.fullscreen #vertical-slider {
-    margin-right: 50px;
-}
+
 
 
 
@@ -135,7 +132,7 @@ background: linear-gradient(0deg, rgba(26,146,71,1) 11%, rgba(29,151,108,1) 100%
 }
 
 .horizone-nav {
-  width: 725px;
+  width: 400px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -161,9 +158,9 @@ background: linear-gradient(0deg, rgba(26,146,71,1) 11%, rgba(29,151,108,1) 100%
   float: right;
   width: 23px;
   height: 20px;
-  position: relative;
+  position: absolute;
   margin-top: 410px;
-  margin-right: 450px;
+  margin-left: 250px;
   cursor: pointer;
   transform: rotate(-270deg);
 }
@@ -225,20 +222,17 @@ background: linear-gradient(0deg, rgba(26,146,71,1) 11%, rgba(29,151,108,1) 100%
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
 }
 
 .horVerSlider .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  padding: 7px;
   border-width: 0 2px 2px 0;
 }
 
 .horVerSlider .left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  padding: 7px;
   border-width: 0 2px 2px 0;
 }
 
@@ -255,32 +249,8 @@ background: linear-gradient(0deg, rgba(26,146,71,1) 11%, rgba(29,151,108,1) 100%
 }
 
 
-.horVerSlider.fullscreen {
-    width: 1175px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right:0;
-    background: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    z-index: 998;
-    margin:auto;
-}
 
-.horVerSlider.fullscreen:before {
-    width:100%;
-    height:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:998;
-    content:"";
-    background:green;
-}
+
 
 .horVerSlider.fullscreen #vertical-slider:before {
     background: green;
