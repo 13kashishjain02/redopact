@@ -192,23 +192,14 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li class="dropdown-item-class"><a class="dropdown-item" href="#">Opt1</a></li>
-                            <div class="submenuList" style="display: flex;">
+                           
                                 <li class="dropdown-item-class"><a class="dropdown-item" href="#">Opt2</a>
-                                </li>
-
-                                <div>
-                                    <ul class="dropdown-submenu dropdown-submenu-item" aria-labelledby="navbarDropdown"
-                                    style="list-style-type:none;">
+                                    <ul class="dropdown-submenu dropdown-submenu-item" aria-labelledby="navbarDropdown">
                                     <li ><a class="dropdown-submenu-item dropdown-item" href="#">Opt1</a></li>
                                     <li><a class="dropdown-submenu-item dropdown-item" href="#">Opt2</a></li>
                                     <li><a class="dropdown-submenu-item dropdown-item" href="#">Opt3</a></li>
                                      </ul>
-                                   </div> 
-                            </div>
-                           
-                               
-                           
-                         
+                                </li>
                             <li><a class="dropdown-item" href="#">Opt3</a></li>
                         </ul>
                       
@@ -236,19 +227,19 @@
             </div>
         </nav>
 
-        <style !important>
+       <style !important>
            
-                .dropdown:hover  .dropdown-menu{
+            .d-none    .dropdown:hover  .dropdown-menu{
                       display: block !important;
              }
-            .dropdown-submenu-item{
+            .d-none .dropdown-submenu-item{
                 display: none;
             }
-            .submenuList:hover .dropdown-submenu-item{
+            .d-none .submenuList:hover .dropdown-submenu-item{
                 display: block;
 
             }
-            .dropdown-item-class:hover .dropdown-submenu-item{
+            .d-none .dropdown-item-class:hover .dropdown-submenu-item{
                 display: block;
 
             }
@@ -417,18 +408,41 @@
                       </h3>
                       <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>
-                            <ul >
-                                <li><a  href="#">Bathroom Acessories</a></li>
-                                <li><a  href="#">Body Hygiene</a></li>
-                                <li><a  href="#">Oral Hygiene</a></li>
-                                <li><a  href="#">Female Hygiene</a></li>
-                                <li><a  href="#">Kits</a></li>
-                            </ul>
-                            </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                           
+                    
                         </div>
-                      </div>
                     </div>
+                </div>
     
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
@@ -439,22 +453,40 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">bags and pouches</a></li>
-                                  <li><a  href="#">wallets and clutches</a></li>
-                                  <li><a  href="#">baskets</a></li>
-                                  <li><a  href="#">mobile cover</a></li>
-                                  <li><a  href="#">face mask</a></li>
-                                  <li><a  href="#">goggles</a></li>
-                                  <li><a  href="#">Stoles and scarves</a></li>
-                                  <li><a  href="#">Tie and Belts</a></li>
-                              </ul>
-                              </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-    
+                     
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <a href="#">Stationary</a>
@@ -464,20 +496,40 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">plantable stationary</a></li>
-                                  <li><a  href="#">pen and pencils</a></li>
-                                  <li><a  href="#">notebooks</a></li>
-                                  <li><a  href="#"> Stands and pouches</a></li>
-                                  <li><a  href="#">office</a></li>
-                                  <li><a  href="#">packaging</a></li>
-                                  <li><a  href="#">stationary kits</a></li>
-                              </ul>
-                              </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                     
     
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
@@ -488,19 +540,40 @@
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">Bathroom Acessories</a></li>
-                                  <li><a  href="#">Body Hygiene</a></li>
-                                  <li><a  href="#">Oral Hygiene</a></li>
-                                  <li><a  href="#">Female Hygiene</a></li>
-                                  <li><a  href="#">Kits</a></li>
-                              </ul>
-                              </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-    
+                     
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFive">
                             <a href="#">Kitchen</a>
@@ -510,18 +583,40 @@
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">cutlery</a></li>
-                                  <li><a  href="#">cookware</a></li>
-                                  <li><a  href="#">serving ware</a></li>
-                                  <li><a  href="#">household supplies</a></li>
-                                  <li><a  href="#">kit</a></li>
-                              </ul>
-                              </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
+
     
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingSix">
@@ -532,17 +627,40 @@
                         </h2>
                         <div id="collapseSix" class="accordion-collapse collapse " aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">FURNITURE</a></li>
-                                  <li><a  href="#">home decor</a></li>
-                                  <li><a  href="#">mandir</a></li>
-                              </ul>
-                              </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-    
+                     
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingSeven">
                             <a href="#">Fashion</a>
@@ -552,18 +670,40 @@
                         </h2>
                         <div id="collapseSeven" class="accordion-collapse collapse " aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">clothes</a></li>
-                                  <li><a  href="#">footwear</a></li>
-                                  <li><a  href="#">jewellery</a></li>
-                                  <li><a  href="#">scrunchies</a></li>
-                              </ul>
-                              </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-    
+                      
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingEight">
                             <a href="#">Garden</a>
@@ -573,17 +713,40 @@
                         </h2>
                         <div id="collapseEight" class="accordion-collapse collapse " aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">pots</a></li>
-                                  <li><a  href="#">planters</a></li>
-                                  <li><a  href="#">outdoor furniture</a></li>
-                                  <li><a  href="#">plants</a></li>
-                              </ul>
-                              </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                     
     
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingNine">
@@ -594,19 +757,40 @@
                         </h2>
                         <div id="collapseNine" class="accordion-collapse collapse " aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">yoga mat</a></li>
-                                  <li><a  href="#">massage ball</a></li>
-                                  <li><a  href="#">sipper</a></li>
-                                  <li><a  href="#">duffel bag</a></li>
-                                  <li><a  href="#">hand towel</a></li>
-                                  <li><a  href="#">cap</a></li>
-                              </ul>
-                              </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                     
     
     
                       <div class="accordion-item">
@@ -618,19 +802,40 @@
                         </h2>
                         <div id="collapseTen" class="accordion-collapse collapse " aria-labelledby="headingTen" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">toys</a></li>
-                                  <li><a  href="#">stationary</a></li>
-                                  <li><a  href="#">friendship band</a></li>
-                                  <li><a  href="#">kids wear</a></li>
-                                  <li><a  href="#">reusable diapers</a></li>
-                                  <li><a  href="#">nursery needs</a></li>
-                              </ul>
-                              </strong>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                     
     
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingEleven">
@@ -641,14 +846,40 @@
                         </h2>
                         <div id="collapseEleven" class="accordion-collapse collapse " aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                              <strong>
-                              <ul >
-                                  <li><a  href="#">books</a></li>
-                              </ul>
-                              </strong>
-                          </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                             <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                     </div>
+                    </div>
+                     
     
     
     
@@ -664,6 +895,7 @@
     </section>
 
     <style>
+        
           .nav-btn{
             display: flex;
             justify-content: space-between;
@@ -692,7 +924,7 @@
         .accordion-item{
             background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
         }
-        .accordion-item button{
+        .accordion-item .accordion-button{
             width: 40px;
             height: 40px;
             background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -701,28 +933,38 @@
             color: #fff;
             justify-content: center;
         }
-        .accordion-item button:active{
+        .accordion-item .accordion-button:active{
             background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
             border: none;
             outline: none;
             color: #fff;
         }
-        .accordion-body ul{
-            display: flex;
-            flex-direction: column;
-            color:#fff;
-            text-decoration: none;
-        }
-         li{
-            text-decoration: none;
-        }
-        .accordion-body li a{
-          color: #fff;
-          text-decoration: none;
-        }
-        strong{
-            text-decoration: none;
-        }
+       
+       .accordion .dropdown{
+           background-color: transparent;
+         
+       }
+       .accordion .dropdown-menu{
+        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+      
+       }
+       .accordion .dropdown-menu a{
+        color: #fff;
+       }
+       .accordion .dropdown-item:hover{
+        background-color: transparent;
+       }
+       .accordion .dropdown button{
+          
+           background-color: transparent;
+           outline: none;
+           border: none;
+       }
+       .accordion .dropdown button:focus{
+        background-color: transparent;
+           outline: none;
+           border: none;
+       }
     </style>
 
  
