@@ -16,10 +16,11 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <style>
     .bottom-left{
-        margin:40px;
         padding: 10px;
         display: flex;
         flex-direction: column;
+        margin: 10px;
+        flex-basis: 25%;
     }
     .left-boxes{
         margin: 10px;
@@ -43,8 +44,9 @@
     .bottom-right{
         border-radius: 7px;
         box-shadow: 2px 2px 3px gray;
-        margin: 50px 50px 50px 10px;
+        margin: 20px;
         padding: 10px;
+        flex-basis: 65%;
     }
     .added-products{
         margin: 5px 5px;
@@ -55,13 +57,72 @@
     }
     .trash-icon i{
         font-size: 1.7rem;
+        color: tomato;
+    }
+    .original-price{
+        font-size: 1.4rem;
+    }
+    @media (max-width:1100px) {
+        .original-price{
+        font-size: 1.1rem;
+    }
+    .offered-price{
+        font-size: 1.1rem;
+    }
+    }
+    @media (max-width:1000px) {
+        .original-price{
+        font-size: 1rem;
+    }
+    .offered-price{
+        font-size: 1rem;
+    }
+    .offer{
+        font-size: 1rem;
+    }
+    }
+  
+    
+    @media (max-width:900px){
+        .product-added{
+        flex-direction: column;
+    }
+    .trash-icon{
+            margin-left: 20px;
+            margin-top: 10px;
+            color: tomato;
+        }
+
+        .bottom-right{
+            margin: 5px;
+            flex-basis: 60%;
+            margin: auto;
+        }
+        .bottom-left{
+            margin: 5px;
+            flex-basis: 35%;
+        }
+        .original-price{
+        font-size: 1.2rem;
+    }
+    }
+    
+    @media (max-width:700px) {
+        .bottom-left{
+            display: none;
+        }
+        .bottom-right{
+            flex-basis: 100%;
+            margin: auto;
+        }
+       
     }
 </style>
 </head>
 <body>
-    <h5 style="color:teal; font-weight:lighter; margin: 10px 70px 10px 70px; ">Home > My Account > My Wishlist</h5>
+    <h5 style="color:teal; font-weight:lighter; ">Home > My Account > My Wishlist</h5>
     <section id="bottom" style="display: flex;">
-    <div class="col-lg-2 col-md-2 bottom-left" style="flex-basis: 22%; background-color: #fff; box-shadow: none;">
+    <div class="col-lg-2 col-md-2 bottom-left" style=" background-color: #fff; box-shadow: none;">
         <div class="user left-boxes" style="margin: 5px 5px; padding: 5px 5px;  display: flex; flex-direction: row; background-color: rgb(230, 224, 224); ">
             <div class="user-icon">
                 <i class="fas fa-user"></i>
@@ -75,7 +136,7 @@
 
        </div>
     </div>
-    <div class="bottom-right" style="display: flex; flex-basis: 65%; flex-direction: column; background-color: rgb(230, 224, 224);;">
+    <div class="bottom-right" style="display: flex;  flex-direction: column; background-color: rgb(230, 224, 224);;">
         <div class="my-orders" style="margin: 1px 5px; padding: 1px 5px;  display: flex; ">
             <h2 style="font-weight: 900;">My Wishlist <span class="no-of-wishlist-items">(12)</span></h2>
         </div>
@@ -93,8 +154,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" > &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive; margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -115,8 +176,9 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price"> &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive;  margin: 0px;">10% off</span></h4>
+                   
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -137,8 +199,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" > &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive;  margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -159,8 +221,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" > &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive;  margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -181,8 +243,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" > &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive;  margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -203,8 +265,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" > &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive; margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -225,8 +287,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price"> &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive; margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -247,8 +309,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" > &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive;  margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -269,8 +331,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price"> &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive;  margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -291,8 +353,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" > &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive; margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -313,8 +375,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" > &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive;  margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
@@ -335,8 +397,8 @@
                     <h4 class="stock-availability" style="color: green;">In Stock</h4>
                    
                     <br>
-                    <h4 class="offered-price"> &#8377 4000 <span class="original-price" style="font-size: 1.4rem;"> &#8377
-                            <strike>5000</strike></span> <span class="offer" style="color: olive; font-size: 1.2rem; margin: 0px;">10% off</span></h4>
+                    <h4 class="offered-price"> &#8377 4000 <span class="original-price"> &#8377
+                            <strike>5000</strike></span> <span class="offer" style="color: olive;  margin: 0px;">10% off</span></h4>
                 </div>
                 <div class="trash-icon">
                     <i class="fas fa-trash"></i>
